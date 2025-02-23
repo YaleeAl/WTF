@@ -1,0 +1,496 @@
+import sys, os
+from io import StringIO
+import datetime
+import pytz
+import requests
+import argparse
+import json
+
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from aws_consul import list_all_mt_customers, create_eks_tenant_values
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../scripts/elasticsearch_infra')))
+import es_api
+
+
+def check_public_url_status(public_url):
+    """
+      Check the health status of a public URL endpoint.
+      Returns the status code as string or error message if request fails.
+    """
+    if not public_url:
+        return "No URL provided"
+
+    url = f"https://{public_url}/skybox/webservice/jaxrsinternal/internal/healthcheck/availability"
+
+    try:
+        response = requests.get(url, headers={"accept": "application/json"}, timeout=10)
+        return str(response.status_code)
+    except requests.exceptions.RequestException as e:
+        return f"Error occurred while making the request: {e}"
+
+
+def capture_list_mt_accounts(consul_token):
+    """
+        Captures the output of list_all_mt_customers function and returns sorted lines.
+
+        Args:
+        consul_token (str): Authentication token for accessing the Consul API
+
+        Returns:
+            list: A sorted list of strings where each string has the format "account/customer/ou",
+                  sorted by the account_id (first part before the slash)
+
+        Raises:
+        Exception: If any error occurs during the retrieval or processing of the accounts
+
+    """
+    try:
+        lines = list_all_mt_customers(consul_token)
+        return sorted(lines, key=lambda x: x.split('/')[0])
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        sys.exit(1)
+
+
+def parse_eks_tenant_values_from_consul(consul_token, ou, account_id, customer, fields):
+    """
+    Calls `create_eks_tenant_values` and parses its output to extract specific keys.
+
+    Args:
+        consul_token (str): Authentication token for Consul API
+        ou (str): Organization unit identifier
+        account_id (str): AWS account ID
+        customer (str): Customer identifier
+        fields (list): List of field names to extract
+
+    Returns:
+        dict: Dictionary containing the extracted field values
+    """
+    # Redirect stdout to capture the printed output from create_eks_tenant_values
+    original_stdout = sys.stdout
+    captured_output = StringIO()
+    try:
+        sys.stdout = captured_output
+        create_eks_tenant_values(consul_token, ou, account_id, customer)
+    except Exception as e:
+        print(f"An error occurred while parsing EKS tenant values: {e}")
+        sys.exit(1)
+    finally:
+        sys.stdout = original_stdout  # Restore stdout
+
+    # Process the captured output to extract desired keys
+    eks_values = {}
+    captured_output.seek(0)  # Reset the pointer to the start of the buffer, so you can read from the beginning.
+    for line in captured_output:
+        if ": " in line:
+            key, value = line.strip().split(": ", 1)
+            if key in fields:
+                eks_values[key] = int(value) if value.isdigit() else value
+
+    # Assign memory based on size
+    size = eks_values.get("size", "").lower()  # Ensure case-insensitivity
+    if size == "small":
+        eks_values["memory"] = 64
+    elif size == "medium":
+        eks_values["memory"] = 128
+    elif size == "large":
+        eks_values["memory"] = 256
+    else:
+        eks_values["memory"] = -1
+
+    return eks_values
+
+
+def process_kubectl_output_file(kubectl_output):
+    """
+    Process kubectl output file and return a dictionary of customer health states.
+
+    Args:
+        kubectl_output (str): Path to kubectl output file
+
+    Returns:
+        dict: Dictionary mapping customer IDs to their health states
+    """
+
+    kubectl_dict = {}
+
+    try:
+        with open(kubectl_output, 'r') as kubectl_file:
+            for line in kubectl_file:
+                parts = line.split()
+                if len(parts) < 3:
+                    continue
+
+                customer_id = parts[0]
+                status = parts[2] # Assuming the status is always the third column
+
+                if status == "1/1":
+                    health_state = "up"
+                    size = 1
+                elif status == "0/0":
+                    health_state = "down"
+                    size = 0
+                elif status == "0/1":
+                    health_state = "unhealthy"
+                    size = 0
+                else:
+                    health_state = "unknown"  # Default case for unexpected statuses
+                    size = 0
+
+                kubectl_dict[customer_id] = {
+                    "full_line": line.strip(),
+                    "health_state": health_state,
+                    "size": size
+                }
+        return kubectl_dict
+    except Exception as e:
+        print(f"Error processing kubectl output file: {e}")
+        sys.exit(1)
+
+
+def process_accounts(consul_token, elastic_user, elastic_pass, accounts_name, kubectl_output, account_id, ou):
+    """
+        Process accounts retrieved from Consul and index them into Elasticsearch.
+
+        Args:
+        consul_token (str): Consul authentication token
+        elastic_user (str): Elasticsearch username
+        elastic_pass (str): Elasticsearch password
+        accounts_name (str): AWS accounts name
+        kubectl_output (str): Path to kubectl output file
+        account_id (str): AWS account ID to process
+        ou (str): Organization unit to process
+    """
+
+    accounts_output = capture_list_mt_accounts(consul_token)
+    if not accounts_output:
+        print("No accounts found.")
+        return
+
+    kubectl_output_dict = process_kubectl_output_file(kubectl_output)
+
+    fields = [
+        "auto_shutdown",
+        "ebs_size",
+        "enable_cloudwatch_agent",
+        "enable_datadog_agent",
+        "env",
+        "size",
+        "skybox_public_url",
+        "tag",
+        "terraform_version",
+        "create_volterra_support"
+    ]
+
+    docs = []
+    for line in accounts_output:
+        try:
+            account_id_consul, customer, ou_consul = line.split('/')
+            if account_id == account_id_consul and ou == ou_consul:
+                eks_values = parse_eks_tenant_values_from_consul(consul_token, ou, account_id, customer, fields)
+
+                es_doc = {
+                    "@timestamp": datetime.datetime.now(pytz.timezone('Asia/Jerusalem')).isoformat(),
+                    "doc_id": f"{customer}_{ou}_{account_id}",
+
+                    "customer": customer,
+                    "account_id": account_id,
+                    "aws_account_name": accounts_name,
+                    "ou": ou,
+
+                    **eks_values,
+                    "public_url_reachable": check_public_url_status(eks_values.get("skybox_public_url", "")),
+                    "health_state": kubectl_output_dict.get(customer, {}).get("health_state", "unknown"),
+                    "eks_size_from_state": kubectl_output_dict.get(customer, {}).get("size"),
+                    "eks_count": kubectl_output_dict.get(customer, {}).get("size") * eks_values["memory"]
+                }
+                docs.append(es_doc)
+
+                print(f"Logged: {account_id}/{customer}/{ou}")
+        except ValueError:
+            print(f"Skipping malformed line: {line}")
+
+    if docs:
+        es_api.bulk_insert("aws_mt_inventory_eks_status", docs, elastic_password=elastic_pass)
+        es_api.bulk_insert("aws_mt_inventory", docs, elastic_password=elastic_pass,doc_id_field="doc_id", action="update")
+    else:
+        print("No documents to index.")
+
+
+def main(argv):
+    parser = argparse.ArgumentParser(description="Update Elasticsearch index with fields")
+    parser.add_argument("-t", "--consul_token", help="Consul token")
+    parser.add_argument("-p", "--elastic_pass", help="Elasticsearch password")
+    parser.add_argument("-e", "--elastic_user", help="Elasticsearch username")
+    parser.add_argument("-a", "--accounts_name", help="Account name")
+    parser.add_argument("-o", "--kubectl_output", help="kubectl output file")
+    parser.add_argument("-i", "--account_id", help="AWS account ID")
+    parser.add_argument("-u", "--ou", help="AWS Organization unit")
+    parser.add_argument('--capture_list_mt_accounts', action='store_true', help='Capture MT control accounts')
+    args = parser.parse_args()
+
+    if args.capture_list_mt_accounts:
+        if not args.consul_token:
+            raise ValueError("Consul token is required for capture_list_mt_accounts")
+        capture_list_mt_accounts(args.consul_token)
+    else:
+        if not args.consul_token or not args.elastic_user or not args.elastic_pass or not args.accounts_name or not args.kubectl_output or not args.account_id:
+            raise ValueError(
+                "Consul token, Elastic username, Elastic password, and accounts file are required for process_accounts")
+        process_accounts(args.consul_token, args.elastic_user, args.elastic_pass, args.accounts_name,
+                         args.kubectl_output, args.account_id, args.ou)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+
+OR
+
+import sys, os
+from io import StringIO
+import datetime
+import pytz
+import requests
+import argparse
+import json
+
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from aws_consul import list_all_mt_customers, create_eks_tenant_values
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../scripts/elasticsearch_infra')))
+import es_api
+
+
+def check_public_url_status(public_url):
+    """
+      Check the health status of a public URL endpoint.
+      Returns the status code as string or error message if request fails.
+    """
+    if not public_url:
+        return "No URL provided"
+
+    url = f"https://{public_url}/skybox/webservice/jaxrsinternal/internal/healthcheck/availability"
+
+    try:
+        response = requests.get(url, headers={"accept": "application/json"}, timeout=10)
+        return str(response.status_code)
+    except requests.exceptions.RequestException as e:
+        return f"Error occurred while making the request: {e}"
+
+
+def capture_list_mt_accounts(consul_token):
+    """
+        Captures the output of list_all_mt_customers function and returns sorted lines.
+
+        Args:
+        consul_token (str): Authentication token for accessing the Consul API
+
+        Returns:
+            list: A sorted list of strings where each string has the format "account/customer/ou",
+                  sorted by the account_id (first part before the slash)
+
+        Raises:
+        Exception: If any error occurs during the retrieval or processing of the accounts
+
+    """
+    try:
+        lines = list_all_mt_customers(consul_token)
+        return sorted(lines, key=lambda x: x.split('/')[0])
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        sys.exit(1)
+
+
+def parse_eks_tenant_values_from_consul(consul_token, ou, account_id, customer, fields):
+    """
+    Calls `create_eks_tenant_values` and parses its output to extract specific keys.
+
+    Args:
+        consul_token (str): Authentication token for Consul API
+        ou (str): Organization unit identifier
+        account_id (str): AWS account ID
+        customer (str): Customer identifier
+        fields (list): List of field names to extract
+
+    Returns:
+        dict: Dictionary containing the extracted field values
+    """
+    # Redirect stdout to capture the printed output from create_eks_tenant_values
+    original_stdout = sys.stdout
+    captured_output = StringIO()
+    try:
+        sys.stdout = captured_output
+        create_eks_tenant_values(consul_token, ou, account_id, customer)
+    except Exception as e:
+        print(f"An error occurred while parsing EKS tenant values: {e}")
+        sys.exit(1)
+    finally:
+        sys.stdout = original_stdout  # Restore stdout
+
+    # Process the captured output to extract desired keys
+    eks_values = {}
+    captured_output.seek(0)  # Reset the pointer to the start of the buffer, so you can read from the beginning.
+    for line in captured_output:
+        if ": " in line:
+            key, value = line.strip().split(": ", 1)
+            if key in fields:
+                eks_values[key] = int(value) if value.isdigit() else value
+
+    # Assign memory based on size
+    size = eks_values.get("size", "").lower()  # Ensure case-insensitivity
+    if size == "small":
+        eks_values["memory"] = 64
+    elif size == "medium":
+        eks_values["memory"] = 128
+    elif size == "large":
+        eks_values["memory"] = 256
+    else:
+        eks_values["memory"] = 0
+
+    return eks_values
+
+
+def process_kubectl_output_file(kubectl_output):
+    """
+    Process kubectl output file and return a dictionary of customer health states.
+
+    Args:
+        kubectl_output (str): Path to kubectl output file
+
+    Returns:
+        dict: Dictionary mapping customer IDs to their health states
+    """
+
+    kubectl_dict = {}
+
+    try:
+        with open(kubectl_output, 'r') as kubectl_file:
+            for line in kubectl_file:
+                parts = line.split()
+                if len(parts) < 3:
+                    continue
+
+                customer_id = parts[0]
+                status = parts[2] # Assuming the status is always the third column
+
+                if status == "1/1":
+                    health_state = "up"
+                    size = 1
+                elif status == "0/0":
+                    health_state = "down"
+                    size = 0
+                elif status == "0/1":
+                    health_state = "unhealthy"
+                    size = 0
+                else:
+                    health_state = "unknown"  # Default case for unexpected statuses
+                    size = 0
+
+                kubectl_dict[customer_id] = {
+                    "full_line": line.strip(),
+                    "health_state": health_state,
+                    "size": size
+                }
+        return kubectl_dict
+    except Exception as e:
+        print(f"Error processing kubectl output file: {e}")
+        sys.exit(1)
+
+
+def process_accounts(consul_token, elastic_user, elastic_pass, accounts_name, kubectl_output, account_id, ou):
+    """
+        Process accounts retrieved from Consul and index them into Elasticsearch.
+
+        Args:
+        consul_token (str): Consul authentication token
+        elastic_user (str): Elasticsearch username
+        elastic_pass (str): Elasticsearch password
+        accounts_name (str): AWS accounts name
+        kubectl_output (str): Path to kubectl output file
+        account_id (str): AWS account ID to process
+        ou (str): Organization unit to process
+    """
+
+    accounts_output = capture_list_mt_accounts(consul_token)
+    if not accounts_output:
+        print("No accounts found.")
+        return
+
+    kubectl_output_dict = process_kubectl_output_file(kubectl_output)
+
+    fields = [
+        "auto_shutdown",
+        "ebs_size",
+        "enable_cloudwatch_agent",
+        "enable_datadog_agent",
+        "env",
+        "size",
+        "skybox_public_url",
+        "tag",
+        "terraform_version",
+        "create_volterra_support"
+    ]
+
+    docs = []
+    for line in accounts_output:
+        try:
+            account_id_consul, customer, ou_consul = line.split('/')
+            if account_id == account_id_consul and ou == ou_consul:
+                eks_values = parse_eks_tenant_values_from_consul(consul_token, ou, account_id, customer, fields)
+
+                es_doc = {
+                    "@timestamp": datetime.datetime.now(pytz.timezone('Asia/Jerusalem')).isoformat(),
+                    "doc_id": f"{customer}_{ou}_{account_id}",
+
+                    "customer": customer,
+                    "account_id": account_id,
+                    "aws_account_name": accounts_name,
+                    "ou": ou,
+
+                    **eks_values,
+                    "public_url_reachable": check_public_url_status(eks_values.get("skybox_public_url", "")),
+                    "health_state": kubectl_output_dict.get(customer, {}).get("health_state", "unknown"),
+                    "eks_size_from_state": kubectl_output_dict.get(customer, {}).get("size"),
+                    "eks_count": kubectl_output_dict.get(customer, {}).get("size", 0) * eks_values["memory"]
+                }
+                docs.append(es_doc)
+
+                print(f"Logged: {account_id}/{customer}/{ou}")
+        except ValueError:
+            print(f"Skipping malformed line: {line}")
+
+    if docs:
+        es_api.bulk_insert("aws_mt_inventory", docs, elastic_password=elastic_pass,doc_id_field="doc_id", action="update")
+    else:
+        print("No documents to index.")
+
+
+def main(argv):
+    parser = argparse.ArgumentParser(description="Update Elasticsearch index with fields")
+    parser.add_argument("-t", "--consul_token", help="Consul token")
+    parser.add_argument("-p", "--elastic_pass", help="Elasticsearch password")
+    parser.add_argument("-e", "--elastic_user", help="Elasticsearch username")
+    parser.add_argument("-a", "--accounts_name", help="Account name")
+    parser.add_argument("-o", "--kubectl_output", help="kubectl output file")
+    parser.add_argument("-i", "--account_id", help="AWS account ID")
+    parser.add_argument("-u", "--ou", help="AWS Organization unit")
+    parser.add_argument('--capture_list_mt_accounts', action='store_true', help='Capture MT control accounts')
+    args = parser.parse_args()
+
+    if args.capture_list_mt_accounts:
+        if not args.consul_token:
+            raise ValueError("Consul token is required for capture_list_mt_accounts")
+        capture_list_mt_accounts(args.consul_token)
+    else:
+        if not args.consul_token or not args.elastic_user or not args.elastic_pass or not args.accounts_name or not args.kubectl_output or not args.account_id:
+            raise ValueError(
+                "Consul token, Elastic username, Elastic password, and accounts file are required for process_accounts")
+        process_accounts(args.consul_token, args.elastic_user, args.elastic_pass, args.accounts_name,
+                         args.kubectl_output, args.account_id, args.ou)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

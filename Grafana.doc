@@ -1,0 +1,835 @@
+Message-ID: <107693350.35.1740314968926@7fd38d68cf60>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_34_868616416.1740314968926"
+
+------=_Part_34_868616416.1740314968926
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Grafana</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Grafana</h1>
+    <div class=3D"Section1">
+        <div id=3D"expander-1341615469" class=3D"expand-container">
+<div id=3D"expander-control-1341615469" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Create Grafana Dashboard to Monitor Skybox/TF Vers=
+ion and Tenant Status</span>
+</div>
+<div id=3D"expander-content-1341615469" class=3D"expand-content">
+<p><strong>Objective:</strong></p>
+<ul>
+<li>
+<p>Build a pipeline to collect and store information about tenants in a mul=
+ti-tenant AWS environment.</p></li>
+<li>
+<p>Visualize the collected data in a Grafana dashboard.</p></li>
+</ul>
+<p><strong>Components:</strong></p>
+<ol start=3D"1">
+<li>
+<p>Pipeline<strong> - </strong>aws_mt_inventory</p>
+<ol start=3D"1">
+<li>
+<p>Get mapping of account_id-account_name from AWS - - using <code>aws orga=
+nizations list-accounts | jq -r '.Accounts[]'</code> with root access.</p><=
+/li>
+<li>
+<p>Get a list of all multi-tenant from consul</p></li>
+<li>
+<p>Sub-pipeline - aws_mt_account_inventory - runs in parallel for all accou=
+nts</p>
+<ol start=3D"1">
+<li>
+<p>Connect to AWS to get the stateful-sets of the tenants of the account</p=
+></li>
+<li>
+<p>Script (aws_mt_inventory.py) - collects all the data needed and send to =
+elastic search with a unique id per each tenant.</p></li>
+</ol></li>
+<li>
+<p>Pipeline - aws_eks_tenant_provisioning - already exists, just add an ups=
+ert to a document, to ensure consistent data from multiple sources.</p>
+<ol start=3D"1">
+<li>
+<p>if tenant is destroyed - change its EKS status to deleted.</p></li>
+</ol></li>
+</ol></li>
+<li>
+<p><strong>Elasticsearch Document:</strong></p>
+<ul>
+<li>
+<p><strong>Fields:</strong></p>
+<ul>
+<li>
+<p>customer (string): Name of the customer.</p></li>
+<li>
+<p>ou (string): Organizational Unit.</p></li>
+<li>
+<p>account_id (string): AWS account ID.</p></li>
+<li>
+<p>aws_account_name (string): Name of the AWS account.</p></li>
+<li>
+<p>terraform_version (string): Terraform version used for provisioning.</p>=
+</li>
+<li>
+<p>connected_to_voltra (boolean): Indicates connection to Voltra.</p></li>
+<li>
+<p>skybox_version (string): Skybox version (tenant and consul tag).</p></li=
+>
+<li>
+<p>is_url_reachable (boolean): Indicates if the URL is reachable.</p></li>
+<li>
+<p>stateful_set_status (string): Status of the stateful set.</p></li>
+<li>
+<p>auto_shutdown (boolean)</p></li>
+<li>
+<p>ebs_size (string)</p></li>
+<li>
+<p>enable_cloudwatch_agent (boolean)</p></li>
+<li>
+<p>enable_datadog_agent (boolean)</p></li>
+<li>
+<p>env (string)</p></li>
+<li>
+<p>size (string)</p></li>
+<li>
+<p>skybox_public_url (string)</p></li>
+<li>
+<p>tag (string)</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p><strong>Grafana Dashboard (AWS Multi-Tenant Summary):</strong></p>
+<ul>
+<li>
+<p><strong>Data Source:</strong> Elasticsearch indices containing "aws_mt_i=
+nventory*" data.</p></li>
+<li>
+<p><strong>Query:</strong> Filters data based on customer, OU, account ID, =
+and account name.</p>
+<ul>
+<li>
+<p>query: customer: $customer AND ou: $ou AND account_id: $account_id AND a=
+ws_account_name: $aws_account_name AND _index:"aws_mt_inventory</p></li>
+<li>
+<p><em>index:"aws_mt_inventory_</em>ownership</p></li>
+</ul></li>
+<li>
+<p><strong>Transformations:</strong></p>
+<ul>
+<li>
+<p>Group by transformation -</p>
+<ul>
+<li>
+<p>Groups data by customer (primary grouping).</p></li>
+<li>
+<p>Calculates "first*" for each field to display the latest non-null value =
+per customer.</p></li>
+<li>
+<p>Ignored for column not to be displayed.</p></li>
+</ul></li>
+<li>
+<p>Organize fields transformation - organizes fields with desired column na=
+mes + order columns.</p></li>
+</ul></li>
+<li>
+<p><strong>Display:</strong></p>
+<ul>
+<li>
+<p>Table format.</p></li>
+<li>
+<p><code>consul_client.put(f"{AWS_OU_PREFIX}/{ou}/{AWS_MT_CONFIGURATION_SUF=
+FIX}/{account}/{customer}/{MT_ACCOUNTS_AUTO_SHUTDOWN_SUFFIX}", custom_contr=
+ol_value)</code></p></li>
+<li>
+<p>Hides unnecessary columns.</p></li>
+<li>
+<p>Applies color coding to specific columns based on value patterns.</p>
+<ul>
+<li>
+<p>add override property =E2=86=92 value mapping (does not exist for this c=
+lient, ^(?!true|false).*$ )</p></li>
+<li>
+<p>add override property =E2=86=92 cell options &gt; cell type</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol><span class=3D"confluence-embedded-file-wrapper image-center-wrapper c=
+onfluence-embedded-manual-size"><img class=3D"confluence-embedded-image ima=
+ge-center" alt=3D"Screenshot 2024-12-22 at 15.51.26-20241222-135132.png" wi=
+dth=3D"404" loading=3D"lazy" src=3D"aab9f89db73e9edd984f22cda0fa9425a0820fb=
+997ec05759a20578aa036cc9c" data-image-src=3D"https://skyboxsecurity.atlassi=
+an.net/wiki/download/attachments/3737223170/Screenshot%202024-12-22%20at%20=
+15.51.26-20241222-135132.png?version=3D2&amp;modificationDate=3D17348757717=
+77&amp;cacheVersion=3D1&amp;api=3Dv2" data-height=3D"619" data-width=3D"404=
+" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"3830579204=
+" data-linked-resource-version=3D"2" data-linked-resource-type=3D"attachmen=
+t" data-linked-resource-default-alias=3D"Screenshot 2024-12-22 at 15.51.26-=
+20241222-135132.png" data-base-url=3D"https://skyboxsecurity.atlassian.net/=
+wiki" data-linked-resource-content-type=3D"image/png" data-linked-resource-=
+container-id=3D"3737223170" data-linked-resource-container-version=3D"1" da=
+ta-media-id=3D"793d3c43-f4db-4ad8-ae90-56d32aacb9a9" data-media-type=3D"fil=
+e" height=3D"619"></span>
+<p></p>
+</div>
+</div>
+<div id=3D"expander-274159559" class=3D"expand-container">
+<div id=3D"expander-control-274159559" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Update doc in elasticsearch to increase Grafana da=
+shboard capabilities</span>
+</div>
+<div id=3D"expander-content-274159559" class=3D"expand-content">
+<p>AIM: take the current index and add parameters to it to create a more ro=
+bust Grafana dashboard.</p>
+<h4 id=3D"Grafana-Step1:SearchforUsageofjunit_parserinCode"><strong>Step 1:=
+ Search for Usage of </strong><code>junit_parser</code><strong> in Code</st=
+rong></h4>
+<ol start=3D"1">
+<li>
+<p>Open <strong>PyCharm</strong>.</p></li>
+<li>
+<p>Use the shortcut <code>Command + Shift + F</code> to search for <code>ju=
+nit_parser</code> across all files.</p></li>
+<li>
+<p>Update all references where documents are pushed to Elasticsearch throug=
+h it:</p>
+<ul>
+<li>
+<p><code>pipeline =3D source to target + NightlyRun</code></p></li>
+<li>
+<p>Replace <strong>index name</strong> in <code>parse_results</code> with:<=
+/p>
+<p><code>es_api.bulk_insert("junit_yalmaliah_test", docs, elastic_password=
+=3Delastic_password)</code></p></li>
+</ul></li>
+</ol>
+<h4 id=3D"Grafana-Step2:Modifyjunit_parser.py"><strong>Step 2: Modify </str=
+ong><code>junit_parser.py</code></h4>
+<ol start=3D"1">
+<li>
+<p><strong>Add Arguments</strong>:</p>
+<ul>
+<li>
+<p>Add short and long argument names.</p></li>
+<li>
+<p>Follow the function call trail to ensure proper integration.</p></li>
+</ul></li>
+<li>
+<p><strong>Update Index</strong>: Ensure the target index name (<code>junit=
+_yalmaliah_test</code>) is used in the <code>parse_results</code> function.=
+</p></li>
+</ol>
+<h4 id=3D"Grafana-Step3:IntegrateUpdatesintothePipeline"><strong>Step 3: In=
+tegrate Updates into the Pipeline</strong></h4>
+<ol start=3D"1">
+<li>
+<p><strong>Add Arguments in the Pipeline</strong>:</p>
+<ul>
+<li>
+<p>Through the script (<code>sh</code>): Add arguments as-is.</p></li>
+<li>
+<p>Through the pipeline config: Add arguments as environment variables (<co=
+de>env.VAR_NAME</code>).</p></li>
+</ul></li>
+<li>
+<p><strong>Find Environment Variables</strong>:</p>
+<ul>
+<li>
+<p>Open a pipeline job in Jenkins, view as <strong>plain text</strong>, and=
+ check all available variables.</p></li>
+<li>
+<p>Alternatively - view environment variables: <a href=3D"https://jenkins-g=
+it/env-vars.html" class=3D"external-link" rel=3D"nofollow">https://jenkins-=
+git/env-vars.html</a>.</p></li>
+</ul></li>
+<li>
+<p><strong>Push Changes to Git</strong>:</p>
+<ul>
+<li>
+<p>Create a branch in Skybox named after the Jira ticket (e.g., <code>SKY-2=
+72148</code>).</p></li>
+<li>
+<p>In <code>skybox/server/parent/pom.xml</code>, add a comment to trigger t=
+he pipeline.</p></li>
+<li>
+<p>Submit a merge request.</p></li>
+</ul></li>
+</ol>
+<h4 id=3D"Grafana-Step4:ElasticsearchSetup"><strong>Step 4: Elasticsearch S=
+etup</strong></h4>
+<ol start=3D"1">
+<li>
+<p>Access Kibana: <a href=3D"https://sb-kibana" class=3D"external-link" rel=
+=3D"nofollow">https://sb-kibana</a>. password from secert server - sb-elast=
+icsearc</p></li>
+<li>
+<p>Add the testing index:</p>
+<ul>
+<li>
+<p>Go to <strong>Management =E2=86=92 Dev Tools =E2=86=92 Console</strong>.=
+</p></li>
+<li>
+<p>Use the following command to create the index:</p>
+<p><code>PUT junit_yalmaliah_test</code></p></li>
+<li>
+<p>Use the following command to delete the index (needs to be recreated for=
+ each run of the pipeline):<br><code>DELETE junit_yalmaliah_test</code></p>=
+</li>
+</ul></li>
+<li>
+<p>Confirm the document format:</p>
+<p><code>GET junit_yalmaliah_test/_search</code></p></li>
+</ol>
+<h4 id=3D"Grafana-Step5:UpdateGrafanaDashboard"><strong>Step 5: Update Graf=
+ana Dashboard</strong></h4>
+<ol start=3D"1">
+<li>
+<p>Access Grafana: <a href=3D"https://sb-grafana" class=3D"external-link" r=
+el=3D"nofollow">https://sb-grafana</a>. password from secert server - Devop=
+sadmin <strong>or</strong> my user (AD)</p></li>
+<li>
+<p><strong>Duplicate the Dashboard</strong>: Never edit the original.</p></=
+li>
+<li>
+<p><strong>Add New Variables</strong>:</p>
+<ul>
+<li>
+<p>Go to the variable bar =E2=86=92 <strong>Settings =E2=86=92 Variables</s=
+trong>.</p></li>
+</ul></li>
+<li>
+<p><strong>Update Queries</strong>:</p>
+<ul>
+<li>
+<p>Edit components =E2=86=92 Add <code>AND x: $x</code> to the query.</p></=
+li>
+</ul></li>
+</ol>
+<h4 id=3D"Grafana-Step6:Troubleshooting"><strong>Step 6: Troubleshooting</s=
+trong></h4>
+<ul>
+<li>
+<p>Debug script arguments, by adding to <code>junit_parser</code>:</p>
+<p><code>print("Parsed options:", opts) </code><br><code>print("Remaining a=
+rguments:", args)</code></p></li>
+<li>
+<p>Add timestamps to pipeline if needed:</p>
+<p><code>script { def currentTime =3D sh(script: "date '+%H:%M:%S'", return=
+Stdout: true).trim() echo "Timestamp: ${currentTime}" sh label: '', script:=
+ """ python3 pipelineUtils/junit_parser.py -m ${gitlabMergeRequestIid} -t $=
+{gitlab_api} \ -p ${WORKSPACE}/skyboxview/ -u ${db_user} -x ${db_pass} -s $=
+{gitlabSourceBranch} \ -d ${gitlabTargetBranch} -o ${gitlabUserEmail} -e ${=
+elastic_pass} -i ${BUILD_ID} \ -r ${gitlabMergeRequestIid} -j ${JOB_NAME} -=
+a ${currentTime} """ }</code></p></li>
+</ul>
+<p></p>
+</div>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_34_868616416.1740314968926
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/8b6b77ca4e264829d8408d3cf48479d9786f03b6b6424bfd6a7ba44066ec7613
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_34_868616416.1740314968926
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/aab9f89db73e9edd984f22cda0fa9425a0820fb997ec05759a20578aa036cc9c
+
+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
+RU5ErkJggg==
+------=_Part_34_868616416.1740314968926--

@@ -1,0 +1,635 @@
+Message-ID: <475685576.61.1740314858693@db4e1f705d72>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_60_559718865.1740314858692"
+
+------=_Part_60_559718865.1740314858692
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Use RKE to create a k8s cluster and connect to Jenkins</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Use RKE to create a k8s cluster and connect to Jenkins</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step1:Create=
+RKEUserandGrouponAllNodes">Step 1: Create RKE User and Group on All Nodes</=
+h3>
+<ol start=3D"1">
+<li>
+<p><strong>Create the RKE user and group</strong> on all nodes in the Kuber=
+netes cluster:</p>
+<p><code>sudo groupadd rke sudo useradd -g rke rke</code></p></li>
+<li>
+<p><strong>Add the user to the Docker group</strong>:</p>
+<p><code>sudo usermod -aG docker rke</code></p></li>
+<li>
+<p><strong>Repeat the steps</strong> on your local machine as well.</p></li=
+>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step2:SSHKeyExchange=
+">Step 2: SSH Key Exchange</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Generate SSH keys</strong>:</p>
+<p><code>ssh-keygen -t rsa</code></p></li>
+<li>
+<p><strong>Copy the SSH public key</strong> to all nodes for passwordless S=
+SH access:</p>
+<p><code>ssh-copy-id -i ~/.ssh/id_rsa.pub rke@rke_host ssh-copy-id -i ~/.ss=
+h/id_rsa.pub rke@host(1-n)</code></p></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step3:InstallRKE(Ran=
+cherKubernetesEngine)">Step 3: Install RKE (Rancher Kubernetes Engine)</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Download the latest RKE binary</strong> from the official <a hre=
+f=3D"https://github.com/rancher/rke/releases" class=3D"external-link" rel=
+=3D"nofollow">RKE GitHub Releases</a>.<br><code>curl -LO "https://dl.k8s.io=
+/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64=
+/kubectl" </code></p></li>
+<li>
+<p><strong>Make the binary executable</strong>:<br><code>chmod +x kubectl <=
+/code><br><code>sudo mv kubectl /usr/local/bin/</code></p></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step4:SetProxyConfig=
+uration">Step 4: Set Proxy Configuration</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Set the </strong><code>NO_PROXY</code><strong> environment varia=
+ble</strong> to include your RKE host and other nodes:</p>
+<p><code>export NO_PROXY=3Drke_host,host(1-n)</code></p></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step5:ConfigureKuber=
+netesCluster">Step 5: Configure Kubernetes Cluster</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Create a YAML configuration file</strong> (<code>cluster.yml</co=
+de>). You can find sample configuration files at <a href=3D"https://rancher=
+.com/docs/rke/latest/en/example-yamls/" class=3D"external-link" rel=3D"nofo=
+llow">Rancher Documentation</a>.</p></li>
+<li>
+<p><strong>Run the </strong><code>rke up</code><strong> command</strong> to=
+ initiate the Kubernetes cluster setup:</p>
+<p><code>rke up --config cluster.yml</code></p>
+<p>After a successful setup, you should see:</p>
+<p><code>INFO[0272] Finished building Kubernetes cluster successfully</code=
+></p></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step6:AccesstheKubeC=
+onfigFile">Step 6: Access the Kube Config File</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Copy the generated kube_config_cluster.yml</strong> to your loca=
+l machine:</p>
+<p><code>mkdir -p ~/.kube &amp;&amp; cp kube_config_cluster.yml ~/.kube/con=
+fig</code></p></li>
+<li>
+<p><strong>Set the </strong><code>KUBECONFIG</code><strong> environment var=
+iable</strong> to point to your kube config file:</p>
+<p><code>export KUBECONFIG=3D/home/rke/.kube/config</code></p></li>
+<li>
+<p><strong>Add the </strong><code>NO_PROXY</code><strong> environment varia=
+ble</strong> to your <code>.bashrc</code> file to ensure proper proxy confi=
+guration (should already be there from step 4.1):</p>
+<p><code>export NO_PROXY=3Drke_host,host(1-n)</code></p></li>
+<li>
+<p><strong>To access the cluster with K9s</strong>, you can set up an alias=
+:</p>
+<p><code>alias k9s=3D'docker run --rm -it -v $KUBECONFIG:/root/.kube/config=
+ quay.io/derailed/k9s'</code></p></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step7:VerifyClusterN=
+odes">Step 7: Verify Cluster Nodes</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Verify the Kubernetes nodes</strong>:</p>
+<p><code>kubectl get nodes</code></p>
+<p>This should show the nodes you added in the <code>cluster.yml</code> fil=
+e.</p></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step8:AddKubernetesC=
+redentialstoJenkins">Step 8: Add Kubernetes Credentials to Jenkins</h3>
+<ol start=3D"1">
+<li>
+<p><strong>Add credentials to Jenkins</strong> using the <code>kube_config_=
+cluster.yml</code> file:</p>
+<ul>
+<li>
+<p>Go to <strong>Manage Jenkins =E2=86=92 Configure System</strong>.</p></l=
+i>
+<li>
+<p>Add <strong>credentials of type "Secret File"</strong>, and upload the <=
+code>~/.kube/config</code> file.</p></li>
+</ul></li>
+<li>
+<p><strong>Configure Jenkins Cloud Settings</strong>:</p>
+<ul>
+<li>
+<p>Go to <strong>Manage Jenkins =E2=86=92 Configure Clouds</strong>.</p></l=
+i>
+<li>
+<p>Add a new cloud configuration and base it on your existing cloud configu=
+ration, changing the Kubernetes cloud name to match the one you created (e.=
+g., <code>kubernetes_test</code>). At the end of this doc is a screen shot =
+of the configuration.</p></li>
+</ul></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step9:RunPipelinetoT=
+esttheKubernetesCloud">Step 9: Run Pipeline to Test the Kubernetes Cloud</h=
+3>
+<ol start=3D"1">
+<li>
+<p><strong>Test the new cloud</strong> by running a pipeline.</p></li>
+</ol>
+<ul>
+<li>
+<p>Ensure that you change the cloud name and the labels:</p>
+<ul>
+<li>
+<p>Label in cluster as in pipeline</p>
+<ul>
+<li>
+<p><code>kubectl label --list nodes &lt;node_name&gt;</code></p></li>
+<li>
+<p><code>kubectl label nodes &lt;node_name&gt; workload=3D&lt;test_cluster&=
+gt;</code></p></li>
+<li>
+<p><code>pipeline { agent { kubernetes { .... usefor:workload ... values: -=
+ test_cluster</code></p></li>
+</ul></li>
+<li>
+<p>Ensure that you change the <em>cloud name</em> in the pipeline script:</=
+p>
+<p><code>pipeline { agent { kubernetes { cloud '&lt;kubernetes_test&gt;' </=
+code></p></li>
+</ul></li>
+</ul>
+<ol start=3D"2">
+<li>
+<p><strong>Verify pod creation</strong>:</p>
+<ul>
+<li>
+<p>Before running the pipeline, use:</p>
+<p><code>kubectl get pods</code></p>
+<p>This should show no pods.</p></li>
+<li>
+<p>After running the pipeline, verify that a new pod has been created:</p>
+<p><code>kubectl get pods</code></p></li>
+<li>
+<p>Troubleshoot the pod:<br><code>kubectl describe pod_name</code></p></li>
+</ul></li>
+</ol>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step10:Installcrowds=
+trikeagentthroughadaemonset">Step 10: Install crowdstrike agent through a d=
+aemon set</h3>
+<p>make sure there is not a flacon service on the cluster=E2=80=99s nodes.<=
+/p>
+<p><code>systemctl | grep falcon</code><br><code>systemctl stop falcon-sens=
+or</code><br><code>systemctl status falcon-sensor</code></p>
+<p>this script is based on mt-deployment/helm/falcon/install.sh</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"># Defin=
+e environment variables
+export FALCON_IMAGE_TAG=3D"falcon-sensor-7.18.0-US-1"
+export FALCON_IMAGE_REPO=3D"docker-nexus3.il.skyboxsecurity.com/devops/agen=
+t"
+export FALCON_SENSOR_REPO=3D"crowdstrike/falcon-sensor"
+export FALCON_NAMESPACE=3D"falcon-system"
+export FALCON_CID=3D"___" # Retrieved from consul aws/jenkins_global_config=
+/on_prem_ec2_crowdStrike_client_cid
+export FALCON_TAG=3D"__" # Retrieved from consul aws/jenkins_global_config/=
+on_prem_ec2_crowdStrike_falcon_tag
+
+# Add CrowdStrike Helm repository
+helm repo add crowdstrike https://crowdstrike.github.io/falcon-helm
+helm repo update
+
+# Create and label the namespace
+kubectl create ns ${FALCON_NAMESPACE}
+kubectl label ns --overwrite ${FALCON_NAMESPACE} pod-security.kubernetes.io=
+/enforce=3Dprivileged
+kubectl label ns --overwrite ${FALCON_NAMESPACE} pod-security.kubernetes.io=
+/audit=3Dprivileged
+kubectl label ns --overwrite ${FALCON_NAMESPACE} pod-security.kubernetes.io=
+/warn=3Dprivileged
+
+# Deploy or upgrade the Falcon sensor
+helm upgrade --install falcon-sensor ${FALCON_SENSOR_REPO} -n ${FALCON_NAME=
+SPACE} \
+  --set falcon.cid=3D${FALCON_CID} \
+  --set node.image.repository=3D${FALCON_IMAGE_REPO} \
+  --set node.image.tag=3D${FALCON_IMAGE_TAG} \
+  --set falcon.tags=3D${FALCON_TAG}  </pre>
+</div>
+</div>
+<p></p>
+<h3 id=3D"UseRKEtocreateak8sclusterandconnecttoJenkins-Step11:Cleanup(Optio=
+nal)">Step 11: Cleanup (Optional)</h3>
+<ol start=3D"1">
+<li>
+<p><strong>To remove a Kubernetes cluster</strong> created with RKE, run:</=
+p>
+<p><code>rke remove --config cluster.yml</code></p></li>
+</ol><span class=3D"confluence-embedded-file-wrapper image-center-wrapper c=
+onfluence-embedded-manual-size"><img class=3D"confluence-embedded-image ima=
+ge-center" alt=3D"jenkins-git_manage_configureClouds_.png" width=3D"468" lo=
+ading=3D"lazy" src=3D"634b4d20997e9b3998ba48683f61284f978dff5a22aaa9b57f654=
+ddc2af562db" data-image-src=3D"https://skyboxsecurity.atlassian.net/wiki/do=
+wnload/attachments/3804266629/jenkins-git_manage_configureClouds_.png?versi=
+on=3D1&amp;modificationDate=3D1733733899172&amp;cacheVersion=3D1&amp;api=3D=
+v2" data-height=3D"2980" data-width=3D"1350" data-unresolved-comment-count=
+=3D"0" data-linked-resource-id=3D"3804921887" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource-defaul=
+t-alias=3D"jenkins-git_manage_configureClouds_.png" data-base-url=3D"https:=
+//skyboxsecurity.atlassian.net/wiki" data-linked-resource-content-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"3804266629" data-linked-reso=
+urce-container-version=3D"1" data-media-id=3D"a633f91f-feff-4997-81ec-f32be=
+ee92afd" data-media-type=3D"file" height=3D"1035"></span>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_60_559718865.1740314858692
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/634b4d20997e9b3998ba48683f61284f978dff5a22aaa9b57f654ddc2af562db
+
+iVBORw0KGgoAAAANSUhEUgAAAHEAAAD6CAYAAACWCajLAAAACXBIWXMAAAsSAAALEgHS3X78AAAg
+AElEQVR4nO19WZBcV1qmXniZB5im3XYDbtM2pu0xmCF6gIYnggd4mQEeeiY6OpiZ7rbdQzMsA8EW
+YIzttuVFso3tMW4axhi33e6WVJK12ZKsXbWXqkqqRSWp9spacqms3Pe8md/E999zMm9l7aWS78m8
++Uf8cW/erW7Wn+ecf/3+XffsOYi7XziKh15/Bw+89g7ufvEoPvfSYZv3HsY9e7l/BPe85Njfc8hI
+/uk9h/CTL7Tgt94+gz/5sBffOtKNbx3uwh8c7ZEtP/+BZh7TW57bJP/voz34o+M9+NJ3Tsjf+tyL
+h/C5F1vw2ReP4see/xB37zmMu188KPyTew7h0y8fxWf5v9tzCD/14kGbX7C3d+85hM/xuPrMa/S9
+d6vPmn/i+Rb7nprj/Lzrp144gof/8V/wm+89hV998yk8+PJbuPfxt3Df0+/g3mfexb1Pv4P7H/8u
+7nvybdz75Nu47+//FZ/f/UPcs+cD14VWy5/f+wHu2L0fH96cB0pF5HJ5lMtlFHI5AGVhy7JgWUXk
+sxmUSyUU8jnZbpaikThQsvDipWv40ad/iC++cQwPv3kGv/3KS3j9n/8QD+/5Nzz42kf4jbfP4Et7
+W/DEnzyP3/3b7+KuvYfx6/98Cr/85kd46NVj+MU3juOBfziC+176AL/4xod4+PVjsv/w68fx868d
+wwOvHJHvQ+aP80v/dBK/8H+P4z+8erRy/L6XDuPBfziKXZ/fewQ/u+c9/Nob38aDz7+PLzzzHh7+
+/b/Dz//pC/jZx7+LB/7mTTz8+0/goT96Bg/++St46I934/5vv4t7Xz6Ce/d+YBT/zEuH8dnnDuDj
+8QAykTD8fj9KpRKmx8cwen0E874ZBBbmsRgK4ubINYSDAcxMTSKTyYiAKPDVSB8uFouYHPchF4vj
+lfbrIsQvv3cW/3nfVbz23f8FnPyP+M29L+OL3zmP/3qwA//tuXdR+u/fxJt/+DQ+9fIx7Lk4JKP/
+d967gN0XhvDXp67g9/a3y8zwNx9fwV+e7MOTZwex+8IwvvKDVjz06lH8wuvHcf9Lh/G1lg58+fsX
+8Y2DHXjizFV8dV8b/vxEHx491Ilddzy3D//+qRZ86q/ex53PH8aP7z6IO779Pu588l3c+fR7uOOp
+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
+YII=
+------=_Part_60_559718865.1740314858692--

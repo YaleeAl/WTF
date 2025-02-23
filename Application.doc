@@ -1,0 +1,531 @@
+Message-ID: <285992794.53.1740315002389@56332c79e0ee>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_52_1623012435.1740315002389"
+
+------=_Part_52_1623012435.1740315002389
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Application</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Application</h1>
+    <div class=3D"Section1">
+        <div id=3D"expander-1641779954" class=3D"expand-container">
+<div id=3D"expander-control-1641779954" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Fix login at the middle of cloud init</span>
+</div>
+<div id=3D"expander-content-1641779954" class=3D"expand-content">
+<h1 id=3D"Application-Fixloginatthemiddleofcloudinit"><strong>Fix login at =
+the middle of cloud init</strong></h1>
+<h2 id=3D"Application-Modificationstouserdata.yml"><strong>Modifications to=
+ </strong><code>userdata.yml</code></h2>
+<h3 id=3D"Application-1.LateCommands(ExecutedAfterInstallationCompletes)"><=
+strong>1. Late Commands (Executed After Installation Completes)</strong></h=
+3>
+<p>Modify <code>appliance/image/ubuntu/build/userdata.yml</code> under <cod=
+e>late-commands</code> to ensure the <code>getty@tty1.service</code> is dis=
+abled during post-installation:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">late-co=
+mmands:
+  - curtin in-target --target=3D/target -- systemctl disable getty@tty1.ser=
+vice
+  - curtin in-target --target=3D/target -- systemctl daemon-reload</pre>
+</div>
+</div>
+<h3 id=3D"Application-2.UserData(Post-InstallationCommands)"><strong>2. Use=
+r Data (Post-Installation Commands)</strong></h3>
+<p>Modify <code>appliance/image/ubuntu/build/userdata.yml</code> under <cod=
+e>user-data/runcmd</code> to re-enable <code>getty@tty1.service</code> afte=
+r installation and reboot the system:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">user-da=
+ta:
+  runcmd:
+    - systemctl enable getty@tty1.service
+    - reboot</pre>
+</div>
+</div>
+<h2 id=3D"Application-BuildingtheISOUsingappliance_ubuntu_branchPipeline"><=
+strong>Building the ISO Using </strong><code>appliance_ubuntu_branch</code>=
+<strong> Pipeline</strong></h2>
+<h3 id=3D"Application-StepstoTriggertheBuild:"><strong>Steps to Trigger the=
+ Build:</strong></h3>
+<ol start=3D"1">
+<li>
+<p><strong>Ensure Correct Branch Selection:</strong></p>
+<ul>
+<li>
+<p><code>appliance_branch</code>: As specified in the JIRA.</p></li>
+<li>
+<p><code>sky_job</code>: Use the current master branch.</p></li>
+</ul></li>
+<li>
+<p><strong>Mark </strong><code>upgrade_packages</code><strong> as enabled</=
+strong>, as there is a known bug.</p></li>
+<li>
+<p><strong>Start the Build Pipeline.</strong></p></li>
+<li>
+<p><strong>Wait for the Build to Complete.</strong></p></li>
+<li>
+<p><strong>Download the Generated </strong><code>.iso</code><strong> File</=
+strong> from the archived artifacts of the job.</p></li>
+</ol>
+<h2 id=3D"Application-DeployingtheISOonESXi"><strong>Deploying the ISO on E=
+SXi</strong></h2>
+<h3 id=3D"Application-1.LogintoESXi:"><strong>1. Log in to ESXi:</strong></=
+h3>
+<ul>
+<li>
+<p>Use the following credentials:</p>
+<ul>
+<li>
+<p><strong>Username:</strong> <code>tomer</code></p></li>
+<li>
+<p><strong>Password:</strong> (local password)</p></li>
+</ul></li>
+</ul>
+<h3 id=3D"Application-2.ConfiguretheVirtualMachine:"><strong>2. Configure t=
+he Virtual Machine:</strong></h3>
+<h4 id=3D"Application-a)ForceBIOSSetup"><strong>a) Force BIOS Setup</strong=
+></h4>
+<ol start=3D"1">
+<li>
+<p>Navigate to the VM.</p></li>
+<li>
+<p>Click <strong>Edit =E2=86=92 VM Options =E2=86=92 Boot Options</strong>.=
+</p></li>
+<li>
+<p>Enable <strong>Force BIOS Setup on Boot</strong>.</p></li>
+</ol>
+<h4 id=3D"Application-b)UploadtheISOFile"><strong>b) Upload the ISO File</s=
+trong></h4>
+<ol start=3D"1">
+<li>
+<p>Navigate to <strong>Edit =E2=86=92 Virtual Hardware</strong>.</p></li>
+<li>
+<p>Upload the <code>.iso</code> file to the correct directory.</p></li>
+<li>
+<p><strong>Unmark the "Connect" checkbox</strong> to prevent immediate boot=
+.</p></li>
+<li>
+<p>Restart the VM and enter the BIOS.</p></li>
+</ol>
+<h4 id=3D"Application-c)StartInstallation"><strong>c) Start Installation</s=
+trong></h4>
+<ol start=3D"1">
+<li>
+<p>Select the uploaded ISO.</p></li>
+<li>
+<p>Choose <strong>"Server Installation"</strong> when prompted.</p></li>
+</ol>
+<h2 id=3D"Application-Troubleshooting"><strong>Troubleshooting</strong></h2=
+>
+<h3 id=3D"Application-1.NetworkIssues(ConnectingtotheInternet)"><strong>1. =
+Network Issues (Connecting to the Internet)</strong></h3>
+<p>If the VM does not connect to the internet, modify the Netplan configura=
+tion:</p>
+<ol start=3D"1">
+<li>
+<p>Open the network configuration file:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">sudo na=
+no /etc/netplan/50-cloud-init.yaml</pre>
+</div>
+</div></li>
+<li>
+<p>Ensure the following configuration is present:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">network=
+:
+  ethernets:
+    ens160:
+      dhcp4: true
+      dhcp-identifier: mac
+      dhcp6: false</pre>
+</div>
+</div></li>
+<li>
+<p>Apply the changes:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">sudo ne=
+tplan apply</pre>
+</div>
+</div></li>
+<li>
+<p>Verify the new IP address:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">ifconfi=
+g</pre>
+</div>
+</div></li>
+</ol>
+<h3 id=3D"Application-2.CheckingInstallationLogs"><strong>2. Checking Insta=
+llation Logs</strong></h3>
+<p>To review the terminal output of the installation process:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">cat /ro=
+ot/appliance_installation.log</pre>
+</div>
+</div>
+<p>This structured guide ensures clarity and smooth execution of the entire=
+ process.</p>
+<p></p>
+</div>
+</div>
+<div id=3D"expander-2096447693" class=3D"expand-container">
+<div id=3D"expander-control-2096447693" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Configure Syslog-ng for SSL/TLS Encryption </span>
+</div>
+<div id=3D"expander-content-2096447693" class=3D"expand-content">
+<h1 id=3D"Application-ConfiguringSyslog-ngforSSL/TLSEncryption"><strong>Con=
+figuring Syslog-ng for SSL/TLS Encryption</strong></h1>
+<h2 id=3D"Application-Step1:CreateNecessaryDirectories"><strong>Step 1: Cre=
+ate Necessary Directories</strong></h2>
+<p>Ensure the required directories exist and set the correct permissions:</=
+p>
+<p><code>sudo mkdir -p /etc/syslog-ng/key.d </code></p>
+<p><code>sudo mkdir -p /etc/syslog-ng/ca.d </code></p>
+<p><code>sudo chmod 700 /etc/syslog-ng/key.d /etc/syslog-ng/ca.d</code></p>
+<hr>
+<h2 id=3D"Application-Step2:GenerateaSelf-SignedCertificate"><strong>Step 2=
+: Generate a Self-Signed Certificate</strong></h2>
+<p>This will serve as both the <strong>server certificate</strong> and its =
+<strong>own Certificate Authority (CA)</strong>.</p>
+<p><code>sudo openssl req -x509 -newkey rsa:2048 -nodes \ -keyout /etc/sysl=
+og-ng/key.d/syslog-ng.key \ -out /etc/syslog-ng/ca.d/syslog-ng.crt \ -days =
+365 \ -subj "/CN=3D$(hostname)/O=3DSkyboxsecurity/C=3DIL" </code></p>
+<p><code>sudo chmod 400 /etc/syslog-ng/key.d/syslog-ng.key </code></p>
+<p><code>sudo chmod 444 /etc/syslog-ng/ca.d/syslog-ng.crt </code></p>
+<p><code>sudo ln -sf /etc/syslog-ng/ca.d/syslog-ng.crt \ /etc/syslog-ng/ca.=
+d/$(openssl x509 -noout -hash -in /etc/syslog-ng/ca.d/syslog-ng.crt).0</cod=
+e></p>
+<hr>
+<h2 id=3D"Application-Step3:ConfigureSyslog-ngforTLS"><strong>Step 3: Confi=
+gure Syslog-ng for TLS</strong></h2>
+<p>Create a configuration file for <strong>TLS-enabled syslog</strong>:</p>
+<p><code>sudo tee /etc/syslog-ng/conf.d/skybox-syslog-ng.conf &lt;&lt; 'EOF=
+' source s_tls { network( ip("0.0.0.0") port(6514) transport("tls") tls( ke=
+y-file("/etc/syslog-ng/key.d/syslog-ng.key") cert-file("/etc/syslog-ng/ca.d=
+/syslog-ng.crt") ca-dir("/etc/syslog-ng/ca.d") peer-verify(optional-untrust=
+ed) ) ); }; destination d_local { file("/var/log/tls-messages"); }; log { s=
+ource(s_tls); destination(d_local); }; EOF</code></p>
+<p>Verify the configuration:</p>
+<p><code>sudo syslog-ng -s</code></p>
+<hr>
+<h2 id=3D"Application-Step4:ConfigureSystemdService"><strong>Step 4: Config=
+ure Systemd Service</strong></h2>
+<p>Create an <strong>override configuration</strong> for the Syslog-ng serv=
+ice:</p>
+<p><code>sudo mkdir -p /etc/systemd/system/syslog-ng.service.d </code></p>
+<p><code>sudo tee /etc/systemd/system/syslog-ng.service.d/override.conf &lt=
+;&lt; 'EOF' [Service] CapabilityBoundingSet=3DCAP_NET_BIND_SERVICE CAP_SYSL=
+OG CAP_DAC_READ_SEARCH AmbientCapabilities=3DCAP_NET_BIND_SERVICE CAP_SYSLO=
+G CAP_DAC_READ_SEARCH EOF</code></p>
+<hr>
+<h2 id=3D"Application-Step5:ConfigureSELinux(IfEnabled-wasnot)"><strong>Ste=
+p 5: Configure SELinux (If Enabled - was not)</strong></h2>
+<p>Ensure the correct SELinux contexts are applied:</p>
+<p><code>if command -v semanage &gt;/dev/null; then sudo semanage fcontext =
+-a -t syslog_conf_t "/etc/syslog-ng/ca.d(/.*)?" sudo semanage fcontext -a -=
+t syslog_conf_t "/etc/syslog-ng/key.d(/.*)?" sudo restorecon -Rv /etc/syslo=
+g-ng/ca.d/ sudo restorecon -Rv /etc/syslog-ng/key.d/ fi</code></p>
+<hr>
+<h2 id=3D"Application-Step6:ConfigureFirewall"><strong>Step 6: Configure Fi=
+rewall</strong></h2>
+<p>Allow incoming connections on port <strong>6514</strong> for TLS syslog:=
+</p>
+<p><code>if command -v firewall-cmd &gt;/dev/null; then sudo firewall-cmd -=
+-permanent --add-port=3D6514/tcp sudo firewall-cmd --reload elif command -v=
+ ufw &gt;/dev/null; then sudo ufw allow 6514/tcp fi</code></p>
+<hr>
+<h2 id=3D"Application-Step7:RestartandTestSyslog-ng"><strong>Step 7: Restar=
+t and Test Syslog-ng</strong></h2>
+<h3 id=3D"Application-RestarttheService"><strong>Restart the Service</stron=
+g></h3>
+<p><code>sudo systemctl daemon-reload </code></p>
+<p><code>sudo systemctl restart syslog-ng</code></p>
+<h3 id=3D"Application-VerifytheServiceisRunning"><strong>Verify the Service=
+ is Running</strong></h3>
+<p><code>sudo systemctl status syslog-ng</code></p>
+<h3 id=3D"Application-TesttheTLSConnection"><strong>Test the TLS Connection=
+</strong></h3>
+<p><code>openssl s_client -connect localhost:6514 -CAfile /etc/syslog-ng/ca=
+.d/syslog-ng.crt</code></p>
+<hr>
+<h2 id=3D"Application-FinalDirectoryStructure"><strong>Final Directory Stru=
+cture</strong></h2>
+<p>After completing all steps, the <strong>directory structure</strong> sho=
+uld look like this:</p>
+<p><code>/etc/syslog-ng/ </code></p>
+<p><code>=E2=94=9C=E2=94=80=E2=94=80 ca.d/ </code></p>
+<p><code>=E2=94=82 =E2=94=9C=E2=94=80=E2=94=80 syslog-ng.crt </code></p>
+<p><code>=E2=94=82 =E2=94=94=E2=94=80=E2=94=80 [hash].0 -&gt; syslog-ng.crt=
+ </code></p>
+<p><code>=E2=94=9C=E2=94=80=E2=94=80 key.d/ </code></p>
+<p><code>=E2=94=82 =E2=94=94=E2=94=80=E2=94=80 syslog-ng.key </code></p>
+<p><code>=E2=94=94=E2=94=80=E2=94=80 conf.d/ </code></p>
+<p><code>=E2=94=94=E2=94=80=E2=94=80 skybox-syslog-ng.conf</code></p>
+<p></p>
+<p></p>
+<p></p>
+<p><a href=3D"https://www.baeldung.com/openssl-self-signed-cert" data-card-=
+appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">https://www.=
+baeldung.com/openssl-self-signed-cert</a></p>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_52_1623012435.1740315002389
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/8b6b77ca4e264829d8408d3cf48479d9786f03b6b6424bfd6a7ba44066ec7613
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_52_1623012435.1740315002389--

@@ -1,0 +1,1614 @@
+Message-ID: <1219126022.63.1740314898750@db4e1f705d72>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_62_2061461052.1740314898749"
+
+------=_Part_62_2061461052.1740314898749
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>AWS multi-tenant</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>AWS multi-tenant</h1>
+    <div class=3D"Section1">
+        <div id=3D"expander-1564751850" class=3D"expand-container">
+<div id=3D"expander-control-1564751850" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Upgrade EKS</span>
+</div>
+<div id=3D"expander-content-1564751850" class=3D"expand-content">
+<h3 id=3D"AWSmulti-tenant-WhatThisScriptDoes"><strong>What This Script Does=
+</strong></h3>
+<p>This script automates the installation and upgrade of <strong>Karpenter<=
+/strong> on an <strong>Amazon EKS (Elastic Kubernetes Service)</strong> clu=
+ster using <strong>Helm</strong>.</p>
+<h4 id=3D"AWSmulti-tenant-WhatisKarpenter?"><strong>What is Karpenter?</str=
+ong></h4>
+<p>Karpenter is an <strong>autoscaler</strong> for Kubernetes that automati=
+cally provisions and deprovisions EC2 instances based on workload demands. =
+Unlike the traditional <strong>Cluster Autoscaler</strong>, Karpenter direc=
+tly interacts with EC2, making scaling decisions faster and more efficient.=
+</p>
+<hr>
+<h2 id=3D"AWSmulti-tenant-ScriptBreakdown"><strong>Script Breakdown</strong=
+></h2>
+<p>The script:</p>
+<ol start=3D"1">
+<li>
+<p><strong>Finds an existing EKS cluster</strong></p></li>
+<li>
+<p><strong>Finds necessary AWS IAM roles and resources</strong></p></li>
+<li>
+<p><strong>Deploys/Upgrades Karpenter using Helm</strong></p></li>
+<li>
+<p><strong>Configures Karpenter with proper IAM permissions and Kubernetes =
+settings</strong></p></li>
+<li>
+<p><strong>Deploys additional Karpenter components (EC2NodeClass, NodePool)=
+</strong></p></li>
+</ol>
+<hr>
+<h2 id=3D"AWSmulti-tenant-Step-by-StepExecution"><strong>Step-by-Step Execu=
+tion</strong></h2>
+<h3 id=3D"AWSmulti-tenant-1.LoadEnvironmentVariables&amp;Functions"><strong=
+>1. Load Environment Variables &amp; Functions</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">. ${WOR=
+KSPACE}/scripts/functions.sh
+</pre>
+</div>
+</div>
+<p>This loads helper functions (like <code>plog</code> for logging and <cod=
+e>die</code> for error handling) from a script.</p>
+<h3 id=3D"AWSmulti-tenant-2.EnableDebugMode(Optional)"><strong>2. Enable De=
+bug Mode (Optional)</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">debug=
+=3Dfalse
+if [ "$1" =3D=3D "debug" ];then
+=09debug=3Dtrue
+fi
+</pre>
+</div>
+</div>
+<p>If the script is run with <code>debug</code> mode (<code>./script.sh deb=
+ug</code>), it enables Helm's <code>--debug</code> and <code>--dry-run</cod=
+e> flags.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-3.GettheEKSClusterName"><strong>3. Get the EKS Cl=
+uster Name</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">cluster=
+_name=3D$(aws eks list-clusters | jq -r '.clusters[0]')
+if [ -z "${cluster_name}" ];then
+=09die "Can't get cluster_name"
+fi
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Retrieves the <strong>first</strong> EKS cluster in AWS using <code>aws =
+eks list-clusters</code>.</p></li>
+<li>
+<p>If no cluster is found, it <strong>exits with an error</strong>.</p></li=
+>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Karpenter <strong>must</strong> be insta=
+lled in an existing EKS cluster.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-4.GettheKarpenterIAMRole"><strong>4. Get the Karp=
+enter IAM Role</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">karpent=
+er_role=3D$(aws iam list-roles| jq -r '.[][].Arn' | grep KarpenterControlle=
+r)
+if [ -z "${karpenter_role}" ];then
+    die "Can't get karpenter_role"
+fi
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Searches for an <strong>IAM Role</strong> with <code>KarpenterController=
+</code> in its name.</p></li>
+<li>
+<p>If no role is found, the script <strong>exits</strong>.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Karpenter requires an IAM Role to intera=
+ct with EC2 and autoscale nodes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-5.GettheKarpenterNodeIAMRole"><strong>5. Get the =
+Karpenter Node IAM Role</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">karpent=
+er_role_name=3D$(aws iam list-roles| jq -r '.[][].RoleName' | grep Karpente=
+r-eks)
+if [ -z "${karpenter_role_name}" ];then
+=09die "Can't get karpenter_role_name"
+fi=09
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Finds the IAM Role Name for worker nodes managed by Karpenter.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Each Karpenter-provisioned node needs an=
+ <strong>IAM Role</strong> with EC2 permissions.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-6.SetDefaultVersionsforKarpenter"><strong>6. Set =
+Default Versions for Karpenter</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">if [ -z=
+ "${version_tag}" ];then
+=09version_tag=3D"0.35.4"
+fi
+
+if [ -z "${version_digest}" ];then
+=09version_digest=3D"sha256:d59b5d4c58011615b593dd80f115106efad034104c2d7f0=
+16c01c19d8e0b21d9"
+fi
+
+if [ -z "${image_repo}" ];then
+        image_repo=3D"690359577697.dkr.ecr.us-east-1.amazonaws.com/infra"
+fi
+
+if [ -z "${chart_version}" ];then
+        chart_version=3D"0.36.0"
+fi
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Defines <strong>default versions</strong> for:</p>
+<ul>
+<li>
+<p>Karpenter Helm Chart</p></li>
+<li>
+<p>Karpenter Docker Image</p></li>
+<li>
+<p>Image repository location</p></li>
+</ul></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Allows easy upgrades by modifying <stron=
+g>chart_version</strong> and <strong>image_tag</strong>.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-7.GettheKarpenterSQSQueue"><strong>7. Get the Kar=
+penter SQS Queue</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">karpent=
+er_queue=3D$(aws sqs list-queues | jq -r '.QueueUrls[]' | grep Karpenter | =
+awk -F\/ '{print $NF}')
+if [ -z "${karpenter_queue}" ];then
+        die "Can't get karpenter_queue"
+fi
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Retrieves the <strong>SQS queue name</strong> for Karpenter.</p></li>
+<li>
+<p>This queue handles <strong>interruption events</strong> (e.g., when a sp=
+ot instance is about to be terminated).</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Karpenter needs an <strong>SQS queue</st=
+rong> to gracefully handle instance terminations.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-8.GettheClusterEndpoint"><strong>8. Get the Clust=
+er Endpoint</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">cluster=
+_endpoint=3D$(aws eks describe-cluster --name ${cluster_name} | jq -r '.clu=
+ster.endpoint')
+if [ -z "${cluster_endpoint}" ];then
+        die "Can't get cluster_endpoint"
+fi
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Retrieves the <strong>API endpoint</strong> of the EKS cluster.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Karpenter must know the <strong>Kubernet=
+es API</strong> location to manage nodes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-9.CreateaService-LinkedRoleforSpotInstances"><str=
+ong>9. Create a Service-Linked Role for Spot Instances</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">aws iam=
+ create-service-linked-role --aws-service-name spot.amazonaws.com &gt; /dev=
+/null 2&gt;&amp;1
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Ensures AWS has a <strong>service-linked role</strong> for managing <str=
+ong>Spot instances</strong>.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Karpenter can provision <strong>Spot Ins=
+tances</strong> to save costs.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-10.Install/UpgradeKarpenterUsingHelm"><strong>10.=
+ Install/Upgrade Karpenter Using Helm</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">helm up=
+grade --install ${debug_info} karpenter oci://public.ecr.aws/karpenter/karp=
+enter \
+  --version "${chart_version}" --namespace "karpenter" --create-namespace \
+  --set "serviceAccount.annotations.eks.amazonaws.com/role-arn=3D${karpente=
+r_role}" \
+  --set "logLevel=3Ddebug" \
+  --set "settings.clusterName=3D${cluster_name}" \
+  --set "settings.clusterEndpoint=3D${cluster_endpoint}" \
+  --set "settings.interruptionQueue=3D${karpenter_queue}" \
+  --set "controller.image.repository=3D${image_repo}" \
+  --set "controller.image.tag=3Dkarpenter-controller-${version_tag}" \
+  --set "controller.image.digest=3D${version_digest}" \
+  --set controller.resources.requests.cpu=3D1 \
+  --set controller.resources.requests.memory=3D1Gi \
+  --set controller.resources.limits.cpu=3D1 \
+  --set controller.resources.limits.memory=3D1Gi \
+  --wait
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Installs (or upgrades) Karpenter using <strong>Helm</strong>.</p></li>
+<li>
+<p>Configures it with:</p>
+<ul>
+<li>
+<p>The <strong>IAM Role</strong></p></li>
+<li>
+<p>The <strong>Cluster API endpoint</strong></p></li>
+<li>
+<p>The <strong>SQS queue</strong></p></li>
+<li>
+<p>The <strong>container image</strong></p></li>
+<li>
+<p>CPU &amp; memory limits</p></li>
+</ul></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Helm simplifies managing Karpenter.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-11.Install/UpgradeEC2NodeClassandNodePool"><stron=
+g>11. Install/Upgrade EC2NodeClass and NodePool</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">helm up=
+grade --install karpenter-ec2nodeclass  karpenter_charts/EC2NodeClass --set=
+ "karpenter_node_iam_role_name=3D${karpenter_role_name}"
+helm upgrade --install karpenter-nodepool  karpenter_charts/NodePool
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>EC2NodeClass</strong> defines what type of EC2 instances Karpent=
+er can provision.</p></li>
+<li>
+<p><strong>NodePool</strong> defines scaling rules.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> These are <strong>essential components</=
+strong> for managing EC2 nodes in Kubernetes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-12.VerifytheInstallation"><strong>12. Verify the =
+Installation</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">helm li=
+st -A --time-format "2006-01-02 15:04"
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Lists installed Helm charts.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Confirms whether <strong>Karpenter was s=
+uccessfully installed</strong>.</p>
+<hr>
+<h2 id=3D"AWSmulti-tenant-WhatDoesThisScriptAchieve?"><strong>What Does Thi=
+s Script Achieve?</strong></h2>
+<p>=E2=9C=85 <strong>Automates the installation &amp; upgrade</strong> of K=
+arpenter.<br>
+=E2=9C=85 <strong>Ensures AWS dependencies (IAM, SQS, EKS) are set up</stro=
+ng>.<br>
+=E2=9C=85 <strong>Deploys Karpenter with proper configurations for Kubernet=
+es autoscaling</strong>.<br>
+=E2=9C=85 <strong>Allows easy version updates</strong> using Helm.</p>
+<h2 id=3D"AWSmulti-tenant-ExplanationofYourEC2NodeClassConfiguration"><stro=
+ng>Explanation of Your EC2NodeClass Configuration</strong></h2>
+<p>This <strong>EC2NodeClass</strong> resource defines how Karpenter provis=
+ions <strong>EC2 instances</strong> in your Amazon EKS cluster. It controls=
+ <strong>AMI selection, storage, networking, security groups, and user data=
+ configuration</strong>.</p>
+<hr>
+<h2 id=3D"AWSmulti-tenant-Step-by-StepBreakdown"><strong>Step-by-Step Break=
+down</strong></h2>
+<h3 id=3D"AWSmulti-tenant-1.ResourceTypeandAPIVersion"><strong>1. Resource =
+Type and API Version</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">apiVers=
+ion: karpenter.k8s.aws/v1beta1
+kind: EC2NodeClass
+metadata:
+  name: default
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>apiVersion: </strong><code>karpenter.k8s.aws/v1beta1</code> =E2=
+=86=92 This is a Karpenter-specific <strong>CRD (Custom Resource Definition=
+)</strong>.</p></li>
+<li>
+<p><strong>kind: </strong><code>EC2NodeClass</code> =E2=86=92 Defines how K=
+arpenter provisions new EC2 instances.</p></li>
+<li>
+<p><strong>metadata.name: </strong><code>default</code> =E2=86=92 This Node=
+Class is named <strong>default</strong>, meaning it may be referenced by No=
+dePools.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> This <strong>NodeClass</strong> acts as =
+a blueprint for provisioning nodes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-2.SpecifytheAMI(AmazonMachineImage)"><strong>2. S=
+pecify the AMI (Amazon Machine Image)</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">spec:
+  amiFamily: AL2
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>AL2</strong> refers to <strong>Amazon Linux 2</strong>.</p></li>
+<li>
+<p>Karpenter automatically selects an Amazon-provided <strong>optimized AMI=
+</strong>.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Ensures nodes are using a stable and opt=
+imized <strong>Kubernetes-compatible</strong> OS.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-3.CustomUserData(StartupScript)"><strong>3. Custo=
+m User Data (Startup Script)</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  userD=
+ata: |
+    #!/bin/bash
+    fallocate -l 32G /swapfile
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+    sysctl -w vm.swappiness=3D10
+    jq '.failSwapOn=3Dfalse' /etc/kubernetes/kubelet/kubelet-config.json | =
+jq '.featureGates.NodeSwap=3Dtrue' | jq '.memorySwap.swapBehavior=3D"Unlimi=
+tedSwap"' &gt; /etc/kubernetes/kubelet/kubelet-config.json.new
+    cp -rf /etc/kubernetes/kubelet/kubelet-config.json /etc/kubernetes/kube=
+let/kubelet-config.json.org
+    cp -rf /etc/kubernetes/kubelet/kubelet-config.json.new /etc/kubernetes/=
+kubelet/kubelet-config.json
+</pre>
+</div>
+</div>
+<p>This <strong>userData</strong> script runs when the instance starts:</p>
+<ol start=3D"1">
+<li>
+<p><strong>Creates a 32GB Swap File</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">falloca=
+te -l 32G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+sysctl -w vm.swappiness=3D10
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Creates a 32GB swap file</strong> to expand virtual memory.</p><=
+/li>
+<li>
+<p><strong>Sets </strong><code>swappiness=3D10</code> to reduce aggressive =
+swap usage.</p></li>
+</ul></li>
+<li>
+<p><strong>Enables Kubernetes NodeSwap</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">jq '.fa=
+ilSwapOn=3Dfalse' /etc/kubernetes/kubelet/kubelet-config.json | jq '.featur=
+eGates.NodeSwap=3Dtrue' | jq '.memorySwap.swapBehavior=3D"UnlimitedSwap"' &=
+gt; /etc/kubernetes/kubelet/kubelet-config.json.new
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Modifies Kubelet=E2=80=99s configuration to <strong>allow swap memory</s=
+trong>.</p></li>
+<li>
+<p>Enables the <code>NodeSwap</code> feature gate.</p></li>
+<li>
+<p>Sets <strong>unlimited swap behavior</strong>.</p></li>
+</ul></li>
+</ol>
+<p>=E2=9C=85 <strong>Why?</strong> This ensures nodes <strong>do not fail d=
+ue to memory pressure</strong> and allows swap usage.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-4.IAMRoleforNodeInstances"><strong>4. IAM Role fo=
+r Node Instances</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  role:=
+ {{ .Values.karpenter_node_iam_role_name }}
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Uses the IAM role defined in Helm (<code>{{ .Values.karpenter_node_iam_r=
+ole_name }}</code>).</p></li>
+<li>
+<p>The role allows EC2 instances to join the EKS cluster and interact with =
+AWS services.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Ensures that nodes <strong>inherit IAM p=
+ermissions</strong> needed for Kubernetes operations.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-5.DefineEC2InstanceStorage"><strong>5. Define EC2=
+ Instance Storage</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  block=
+DeviceMappings:
+    - deviceName: /dev/xvda
+      ebs:
+        volumeSize: {{ .Values.ec2_node_class_volume_size }}
+        volumeType: {{ .Values.ec2_node_class_volume_type }}
+        iops: {{ .Values.ec2_node_class_volume_iops }}
+        encrypted: true
+        deleteOnTermination: true
+        throughput: {{ .Values.ec2_node_class_throughput }}
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Device Name </strong><code>/dev/xvda</code> =E2=86=92 This is th=
+e primary volume.</p></li>
+<li>
+<p><strong>Volume Size</strong> =E2=86=92 <code>{{ .Values.ec2_node_class_v=
+olume_size }}</code> (Defined in Helm).</p></li>
+<li>
+<p><strong>Volume Type</strong> =E2=86=92 <code>{{ .Values.ec2_node_class_v=
+olume_type }}</code> (e.g., <code>gp3</code> or <code>io1</code>).</p></li>
+<li>
+<p><strong>IOPS (Input/Output Operations Per Second)</strong> =E2=86=92 <co=
+de>{{ .Values.ec2_node_class_volume_iops }}</code>.</p></li>
+<li>
+<p><strong>Throughput</strong> =E2=86=92 <code>{{ .Values.ec2_node_class_th=
+roughput }}</code> (Important for <code>gp3</code> volumes).</p></li>
+<li>
+<p><strong>Encrypted: </strong><code>true</code> =E2=86=92 Ensures data sec=
+urity.</p></li>
+<li>
+<p><strong>Delete on Termination: </strong><code>true</code> =E2=86=92 Dele=
+tes the volume when the instance is terminated.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Controls <strong>storage configuration</=
+strong>, ensuring performance and security.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-6.SelectAWSSubnetsforNodeDeployment"><strong>6. S=
+elect AWS Subnets for Node Deployment</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  subne=
+tSelectorTerms:
+    - tags:
+        karpenter.sh/discovery: eks
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Selects <strong>subnets</strong> with the tag <code>karpenter.sh/discove=
+ry: eks</code>.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Ensures instances <strong>launch in the =
+correct VPC subnets</strong>.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-7.AssignSecurityGroupstoNodes"><strong>7. Assign =
+Security Groups to Nodes</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  secur=
+ityGroupSelectorTerms:
+    - tags:
+        karpenter.sh/discovery: eks
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Selects <strong>security groups</strong> based on the same <code>karpent=
+er.sh/discovery: eks</code> tag.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Ensures worker nodes <strong>inherit the=
+ correct security settings</strong>.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-8.ApplyTagstoInstances"><strong>8. Apply Tags to =
+Instances</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  tags:
+    karpenter.sh/discovery: eks
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p>Tags all created instances with <code>karpenter.sh/discovery: eks</code>=
+.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Helps Karpenter <strong>track and manage=
+ instances</strong>.</p>
+<hr>
+<h2 id=3D"AWSmulti-tenant-Summary:WhatDoesThisEC2NodeClassDo?"><strong>Summ=
+ary: What Does This EC2NodeClass Do?</strong></h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"68fe27a9-e426-4a97-8116-0bc=
+7af760d12" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Feature</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Description</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>AMI Selection</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Uses Amazon Linux 2 (AL2).</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Startup Script</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Creates a <strong>32GB swap file</strong> and enables <strong>NodeSwap</=
+strong>.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>IAM Role</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Uses a dynamically assigned IAM role for worker nodes.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>EBS Storage</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Defines <strong>storage size, type, IOPS, throughput, and encryption</st=
+rong>.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Subnet Selection</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Chooses subnets with the tag <code>karpenter.sh/discovery: eks</code>.</=
+p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Security Groups</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Assigns security groups with the tag <code>karpenter.sh/discovery: eks</=
+code>.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Tags</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Labels EC2 instances for tracking.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id=3D"AWSmulti-tenant-WhyisThisEC2NodeClassImportant?"><strong>Why is T=
+his EC2NodeClass Important?</strong></h2>
+<p>=F0=9F=94=B9 <strong>Controls how Karpenter provisions EC2 nodes</strong=
+>.<br>
+=F0=9F=94=B9 <strong>Ensures nodes have the right IAM, networking, and stor=
+age settings</strong>.<br>
+=F0=9F=94=B9 <strong>Improves performance with swap memory and storage opti=
+mizations</strong>.<br>
+=F0=9F=94=B9 <strong>Allows Kubernetes workloads to scale efficiently</stro=
+ng>.</p>
+<h2 id=3D"AWSmulti-tenant-ExplanationofYourKarpenterNodePoolConfiguration">=
+<strong>Explanation of Your Karpenter NodePool Configuration</strong></h2>
+<p>This <strong>NodePool</strong> resource defines <strong>how Karpenter pr=
+ovisions and manages EC2 instances</strong> in your Kubernetes cluster. It =
+controls <strong>which instance types are allowed, where nodes can be creat=
+ed, autoscaling limits, and node lifecycle policies</strong>.</p>
+<hr>
+<h2 id=3D"AWSmulti-tenant-Step-by-StepBreakdown.1"><strong>Step-by-Step Bre=
+akdown</strong></h2>
+<h3 id=3D"AWSmulti-tenant-1.DefineResourceTypeandMetadata"><strong>1. Defin=
+e Resource Type and Metadata</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">apiVers=
+ion: karpenter.sh/v1beta1
+kind: NodePool
+metadata:
+  name: default
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>apiVersion: </strong><code>karpenter.sh/v1beta1</code> =E2=86=92=
+ This is a Karpenter-specific <strong>CRD (Custom Resource Definition)</str=
+ong>.</p></li>
+<li>
+<p><strong>kind: </strong><code>NodePool</code> =E2=86=92 Defines a <strong=
+>scaling policy</strong> for Kubernetes nodes.</p></li>
+<li>
+<p><strong>metadata.name: </strong><code>default</code> =E2=86=92 The name =
+of this NodePool is <strong>default</strong>.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> This <strong>NodePool</strong> tells Kar=
+penter how to provision EC2 nodes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-2.DefineNodeTemplate(HowNodesAreCreated)"><strong=
+>2. Define Node Template (How Nodes Are Created)</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">spec:
+  template:
+    metadata:
+      labels:
+        created_by: karpenter
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Labels</strong> =E2=86=92 Assigns the label <code>created_by: ka=
+rpenter</code> to each node.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> This makes it <strong>easy to filter</st=
+rong> and manage Karpenter-created nodes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-3.AssociatewithanEC2NodeClass"><strong>3. Associa=
+te with an EC2NodeClass</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">    spe=
+c:
+      nodeClassRef:
+        name: default
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>nodeClassRef: </strong><code>default</code> =E2=86=92 Links this=
+ <strong>NodePool</strong> to an <strong>EC2NodeClass</strong> named <code>=
+default</code>.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> The <strong>EC2NodeClass</strong> define=
+s AMI, storage, IAM roles, and network settings.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-4.DefineNodeSchedulingConstraints"><strong>4. Def=
+ine Node Scheduling Constraints</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">      r=
+equirements:
+        - key: "node.kubernetes.io/instance-type"
+          operator: In
+          values: {{ .Values.karpenter_instance_types | toJson }}
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Instance Type Constraint</strong></p>
+<ul>
+<li>
+<p>This restricts Karpenter to <strong>specific EC2 instance types</strong>=
+.</p></li>
+<li>
+<p><code>{{ .Values.karpenter_instance_types | toJson }}</code> dynamically=
+ pulls values from Helm.</p></li>
+</ul></li>
+</ul>
+<p>Example (after Helm resolves values):</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">      r=
+equirements:
+        - key: "node.kubernetes.io/instance-type"
+          operator: In
+          values: ["t3.medium", "m5.large", "c5.xlarge"]
+</pre>
+</div>
+</div>
+<p>=E2=9C=85 <strong>Why?</strong> Ensures that <strong>only approved insta=
+nce types</strong> are used.</p>
+<hr>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">       =
+ - key: "topology.kubernetes.io/zone"
+          operator: In
+          values: {{ .Values.azs | toJson }}
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Availability Zone Constraint</strong></p>
+<ul>
+<li>
+<p>Restricts nodes to <strong>specific AWS Availability Zones</strong>.</p>=
+</li>
+<li>
+<p>Example values after Helm resolves:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">values:=
+ ["us-east-1a", "us-east-1b", "us-east-1c"]
+</pre>
+</div>
+</div></li>
+</ul></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Ensures workloads <strong>only run in sp=
+ecified zones</strong>.</p>
+<hr>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">       =
+ - key: "karpenter.sh/capacity-type"
+          operator: In
+          values: {{ .Values.karpenter_instance_capacity_types | toJson }}
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Capacity Type Constraint</strong></p>
+<ul>
+<li>
+<p>Controls whether Karpenter uses:</p>
+<ul>
+<li>
+<p><strong>"on-demand"</strong> instances.</p></li>
+<li>
+<p><strong>"spot"</strong> instances (cheaper but can be terminated anytime=
+).</p></li>
+</ul></li>
+<li>
+<p>Example values after Helm resolves:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">values:=
+ ["on-demand", "spot"]
+</pre>
+</div>
+</div></li>
+</ul></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Allows cost-optimization by mixing <stro=
+ng>Spot and On-Demand instances</strong>.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-5.SetCPULimitsforAuto-Scaling"><strong>5. Set CPU=
+ Limits for Auto-Scaling</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  limit=
+s:
+    cpu: 1000
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><strong>Limits total vCPUs across all nodes</strong> managed by this <st=
+rong>NodePool</strong>.</p></li>
+<li>
+<p><strong>1000 CPU cores</strong> =E2=86=92 Limits the maximum cluster siz=
+e.</p></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Prevents <strong>uncontrolled auto-scali=
+ng</strong> from over-provisioning nodes.</p>
+<hr>
+<h3 id=3D"AWSmulti-tenant-6.DefineNodeDisruptionandConsolidationPolicies"><=
+strong>6. Define Node Disruption and Consolidation Policies</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  disru=
+ption:
+    consolidationPolicy: WhenEmpty
+    consolidateAfter: 30s
+    expireAfter: 'Never'
+</pre>
+</div>
+</div>
+<ul>
+<li>
+<p><code>consolidationPolicy: WhenEmpty</code> =E2=86=92</p>
+<ul>
+<li>
+<p>Karpenter <strong>removes underutilized nodes</strong> <strong>only when=
+ they are empty</strong>.</p></li>
+</ul></li>
+<li>
+<p><code>consolidateAfter: 30s</code> =E2=86=92</p>
+<ul>
+<li>
+<p>Karpenter checks for <strong>unused nodes every 30 seconds</strong>.</p>=
+</li>
+</ul></li>
+<li>
+<p><code>expireAfter: 'Never'</code> =E2=86=92</p>
+<ul>
+<li>
+<p>Nodes never expire unless scaled down manually or consolidated.</p></li>
+</ul></li>
+</ul>
+<p>=E2=9C=85 <strong>Why?</strong> Prevents <strong>unnecessary node deleti=
+ons</strong> while still optimizing resource usage.</p>
+<hr>
+<h2 id=3D"AWSmulti-tenant-Summary:WhatDoesThisNodePoolDo?"><strong>Summary:=
+ What Does This NodePool Do?</strong></h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"9bb94b43-0bc4-49b7-9bab-7d6=
+ccf4e56b2" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Feature</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Description</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Instance Type Selection</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Restricts instances to approved types.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Availability Zones</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Ensures nodes are provisioned only in selected AZs.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Capacity Type</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Supports <strong>Spot</strong> and <strong>On-Demand</strong> instances.=
+</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Max CPU Limit</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Prevents excessive node scaling beyond <strong>1000 CPUs</strong>.</p></=
+td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Consolidation</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Automatically removes <strong>empty</strong> nodes after <strong>30 seco=
+nds</strong>.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Expiration</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Nodes <strong>never expire</strong> automatically.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id=3D"AWSmulti-tenant-WhyisThisNodePoolImportant?"><strong>Why is This =
+NodePool Important?</strong></h2>
+<p>=F0=9F=94=B9 <strong>Controls auto-scaling behavior</strong> for Kuberne=
+tes worker nodes.<br>
+=F0=9F=94=B9 <strong>Optimizes costs</strong> by allowing a mix of <strong>=
+Spot</strong> and <strong>On-Demand</strong> instances.<br>
+=F0=9F=94=B9 <strong>Improves scheduling</strong> by defining <strong>which=
+ instance types and AZs</strong> are allowed.<br>
+=F0=9F=94=B9 <strong>Reduces waste</strong> by consolidating <strong>idle n=
+odes</strong> after 30s.</p>
+<p></p>
+</div>
+</div>
+<div id=3D"expander-1580487574" class=3D"expand-container">
+<div id=3D"expander-control-1580487574" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">ECR lifecycle policies for unused images </span>
+</div>
+<div id=3D"expander-content-1580487574" class=3D"expand-content">
+<p>AIM: remove unused images from the ECR</p>
+<ul>
+<li>
+<p><strong>PRODUCTION_IMAGE_TTL =3D 90 (Giddy_=E2=80=A6 , Felix_=E2=80=A6)<=
+/strong></p></li>
+<li>
+<p><strong>FB_IMAGE_TTL =3D 60 ( *_CR_FB_ * )</strong></p></li>
+<li>
+<p><strong>MASTER_IMAGE_TTL =3D 60 (master) - step 2.1</strong></p></li>
+<li>
+<p><strong>PRODUCTION_IMAGE_WITH_GA_BUILD -&gt; Not deleting GA images (Wer=
+e released as GA) - step 2.4</strong></p></li>
+<li>
+<p><strong>UNKOWN_IMAGE_PATTERN_TTL =3D 90 (??, need to take a look at the =
+code)</strong></p></li>
+</ul>
+<p></p>
+<p><u>Step 1: create a list of all current image in the ECR</u></p>
+<p>Skybox=E2=80=99s ECR is residing in =E2=80=9C<strong>skybox-shared-servi=
+ces</strong>=E2=80=9C account.</p>
+<p>There are a few jobs that update the images that are in the ECR:</p>
+<ul>
+<li>
+<p>Build_Saas_Agents - <a href=3D"https://jenkins-srv/job/Build_Saas_Agents=
+/" class=3D"external-link" rel=3D"nofollow">https://jenkins-srv/job/Build_S=
+aas_Agents/</a> - MySQL, Elastic, Artemis, Cloudwatch, Datadog</p></li>
+<li>
+<p>non_production_build - <a href=3D"https://jenkins-srv/job/non_production=
+_build/" class=3D"external-link" rel=3D"nofollow">https://jenkins-srv/job/n=
+on_production_build/</a></p></li>
+<li>
+<p>Version=E2=80=99s pipeline - <a href=3D"https://jenkins-srv/job/Giddy/" =
+class=3D"external-link" rel=3D"nofollow">https://jenkins-srv/job/Giddy/</a>=
+ - Giddty, felix..</p></li>
+</ul>
+<p>I created a script in devopstols/aws_scripts/shared_account_utils/get_al=
+l_ecr_images.sh that returns a list of all the images that are in all the r=
+epositories within the ECR.</p>
+<p><u>Step 2: handle all =E2=80=9Cdo-not-delete=E2=80=9D images</u></p>
+<p><u>Step 2.1: life cycle policies</u></p>
+<p>Each repository within the ECR has its own life cycle policy (see end of=
+ section for the policies as of 11-feb-2025).</p>
+<p>The lifecycle policies handle images with the prefixes - <code>[SKY-]</c=
+ode> <code>,[master_],[cherry-pick-][collector-base],[elastic-SKY-]</code>,=
+ <code>[mysql-SKY-]</code>, <code>[artemis-SKY-]</code>, <code>[cloudwatch-=
+SKY-]</code>, <code>[datadog-SKY-],[elastic-master_]</code>, <code>[mysql-m=
+aster_]</code>, <code>[artemis-master_]</code>, <code>[cloudwatch-master_]<=
+/code>, <code>[datadog-master_]</code></p>
+<p><u>Step 2.2: create a =E2=80=9Cwhite list=E2=80=9D of all currently used=
+ by an ECS images</u></p>
+<p>We need to handle the images that are currently in production. To do thi=
+s we need to create a =E2=80=9Cwhite list=E2=80=9D of all images that are c=
+urrently being used by an ECS of an account.</p>
+<p>To see image used by ECS =3D AWS =E2=86=92 ECS =E2=86=92 task definition=
+</p>
+<p>I created a script in devopstols/aws_scripts/shared_account_utils/get_im=
+ages_used_by_ecs.sh that returns a list of all images that are being used b=
+y an ECS (this needs to run for each account).</p>
+<p><u>Step 2.3: create a =E2=80=9Cwhite list=E2=80=9D of all currently used=
+ by an EKS images</u></p>
+<p>f</p>
+<p><u>Step 2.4: get the list of GA versions</u></p>
+<p>GA images are not to be deleted!</p>
+<p><u>Step 3: create a list of images to delete</u></p>
+<p>In step 2.1 we got a list of prefixes that we can ignire, as the life cy=
+cle policy handles them. In step 2.2 we got a white list of images that are=
+ not to be deleted as they are currently in use. and so, we need to subtrac=
+t the images from step 2 from the list of all images within the ECR that we=
+ got in step 1.</p>
+<h3 id=3D"AWSmulti-tenant-RepositorieswithNoLifecyclePolicy"><strong>Reposi=
+tories with No Lifecycle Policy</strong></h3>
+<ul>
+<li>
+<p><code>development</code></p></li>
+<li>
+<p><code>ecr-public/eks-distro/kubernetes/pause</code></p></li>
+<li>
+<p><code>skyboxdev/app</code></p></li>
+<li>
+<p><code>skyboxdev/services/service-check-access</code></p></li>
+<li>
+<p><code>skyboxreleases/app</code></p></li>
+<li>
+<p><code>skyboxreleases/collector</code></p></li>
+<li>
+<p><code>skyboxreleases/server</code></p></li>
+</ul>
+<hr>
+<h3 id=3D"AWSmulti-tenant-RepositorieswithLifecyclePolicies"><strong>Reposi=
+tories with Lifecycle Policies</strong></h3>
+<h4 id=3D"AWSmulti-tenant-Short-livedimages(1-dayexpiry)"><strong>Short-liv=
+ed images (1-day expiry)</strong></h4>
+<ul>
+<li>
+<p><code>skyboxdev/services/service-vtm-service</code></p></li>
+<li>
+<p><code>skyboxdev/services/service-model-service</code></p></li>
+<li>
+<p><code>skyboxdev/services/service-hello-world</code></p></li>
+<li>
+<p><code>skyboxdev/services/service-conga</code></p>
+<ul>
+<li>
+<p><strong>Rule 1</strong>: Expire <strong>all images</strong> after <stron=
+g>1 day</strong></p></li>
+</ul></li>
+</ul>
+<hr>
+<h4 id=3D"AWSmulti-tenant-SkyboxDevServer"><strong>SkyboxDev Server</strong=
+></h4>
+<ul>
+<li>
+<p><strong>Rule 1</strong>: Expire <strong>untagged images</strong> after <=
+strong>1 day</strong></p></li>
+<li>
+<p><strong>Rule 2</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[SKY-]</code> after <strong>14 days</strong></p></li>
+<li>
+<p><strong>Rule 3</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[master_]</code> after <strong>14 days</strong></p></li>
+<li>
+<p><strong>Rule 4</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[cherry-pick-]</code> after <strong>1 day</strong></p></li>
+</ul>
+<hr>
+<h4 id=3D"AWSmulti-tenant-SkyboxDevCollector"><strong>SkyboxDev Collector</=
+strong></h4>
+<ul>
+<li>
+<p><strong>Rule 1</strong>: Expire <strong>untagged images</strong> after <=
+strong>1 day</strong></p></li>
+<li>
+<p><strong>Rule 2</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[SKY-]</code> after <strong>7 days</strong></p></li>
+<li>
+<p><strong>Rule 3</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[master_]</code> after <strong>14 days</strong></p></li>
+<li>
+<p><strong>Rule 4</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[cherry-pick-]</code> after <strong>1 day</strong></p></li>
+</ul>
+<hr>
+<h4 id=3D"AWSmulti-tenant-Infra"><strong>Infra</strong></h4>
+<ul>
+<li>
+<p><strong>Rule 1</strong>: Expire <strong>untagged images</strong> after <=
+strong>1 day</strong></p></li>
+<li>
+<p><strong>Rule 2</strong>: Expire <strong>tagged images</strong> with pref=
+ix <code>[collector-base]</code> after <strong>1 day</strong></p></li>
+</ul>
+<hr>
+<h4 id=3D"AWSmulti-tenant-DevOpsAgent"><strong>DevOps Agent</strong></h4>
+<ul>
+<li>
+<p><strong>Rule 1</strong>: Expire <strong>untagged images</strong> after <=
+strong>1 day</strong></p></li>
+<li>
+<p><strong>Rules 2-6</strong>: Expire <strong>tagged images</strong> with p=
+refix <code>[elastic-SKY-]</code>, <code>[mysql-SKY-]</code>, <code>[artemi=
+s-SKY-]</code>, <code>[cloudwatch-SKY-]</code>, <code>[datadog-SKY-]</code>=
+ after <strong>14 days</strong></p></li>
+<li>
+<p><strong>Rules 7-11</strong>: Expire <strong>tagged images</strong> with =
+prefix <code>[elastic-master_]</code>, <code>[mysql-master_]</code>, <code>=
+[artemis-master_]</code>, <code>[cloudwatch-master_]</code>, <code>[datadog=
+-master_]</code> after <strong>14 days</strong></p></li>
+</ul>
+<p></p>
+<p></p>
+</div>
+</div>
+<div id=3D"expander-674030352" class=3D"expand-container">
+<div id=3D"expander-control-674030352" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Deploying with Terraform across an account </span>
+</div>
+<div id=3D"expander-content-674030352" class=3D"expand-content">
+<ul>
+<li>
+<p>change the neccassry files in mt-deployment/. for example:</p>
+<ul>
+<li>
+<p><a href=3D"http://variables.tf" class=3D"external-link" rel=3D"nofollow"=
+>variables.tf</a> - insert within the map =E2=80=9C<code>bash_scripts_to_s3=
+</code>=E2=80=9C an additional bash script</p></li>
+<li>
+<p><a href=3D"http://ssm.tf" class=3D"external-link" rel=3D"nofollow">ssm.t=
+f</a> - create a new SSM document</p></li>
+</ul></li>
+<li>
+<p>Run the pipeline named =E2=80=9Caws_eks_account_provisioning=E2=80=9D<st=
+rong> for each wanted account</strong> (no way to preform this action on mu=
+ltiple accounts for safety reasons)</p>
+<ul>
+<li>
+<p>The pipeline will wait for you to approve the plan.json (can be found in=
+ the archived artifacts of the specific Jenkins job). Visualize the file th=
+rough <a href=3D"https://sb-tfui" class=3D"external-link" rel=3D"nofollow">=
+https://sb-tfui</a> and check:</p>
+<ul>
+<li>
+<p>If =E2=80=9Ccluser_creation=E2=80=9D is showing go to AWS access portal =
+=E2=86=92 account =E2=86=92 glovbal/admin credentials =E2=86=92 EKS =E2=86=
+=92 access =E2=86=92 role-global-terraform =E2=86=92 delete</p></li>
+<li>
+<p>If anything related to network shows know you will have to re-run the pi=
+peline until they wont show (the exception is -module.tgw_attachment.aws_ec=
+2_transit_gateway_vpc_attachment.local_account)</p></li>
+</ul></li>
+<li>
+<p>Re-run the pipeline until you don=E2=80=99t see updates/creations that a=
+re not wanted and/or no resources added.</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id=3D"expander-683675345" class=3D"expand-container">
+<div id=3D"expander-control-683675345" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"8b6b77ca4e264829d8408d3cf48479d9786f03=
+b6b6424bfd6a7ba44066ec7613" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Delete PVC in multi-tenant AWS EKS - elasticsearch=
+ + mySQL + data</span>
+</div>
+<div id=3D"expander-content-683675345" class=3D"expand-content">
+<p>AIM: delete resources connected to a stateful set (mySQL/elasticsearch/d=
+ata)</p>
+<p>Each tenant has its own stateful set, with replica set to 1.</p>
+<p>connection to AWS -activated by =E2=80=9Csession_to_eks.sh=E2=80=9C (cre=
+ates an SSH tunnel through a bastion EC2 instance, bu using an AWS document=
+ called 'port_forward_to_remote_document')</p>
+<p>Pipeline - aws_mt_wipedb</p>
+<ul>
+<li>
+<p>In jenkins</p>
+<ul>
+<li>
+<p>create a new item by copying =E2=80=9Caws_eks_tenant_resize=E2=80=9C <a =
+href=3D"https://www.youtube.com/watch?v=3DMNzNPCJJqaI" data-card-appearance=
+=3D"inline" class=3D"external-link" rel=3D"nofollow">https://www.youtube.co=
+m/watch?v=3DMNzNPCJJqaI</a></p></li>
+<li>
+<p>remove unnecessary parameters by clicking the =E2=80=9Cconfigure=E2=80=
+=9D button and scrolling down until you reach an unwanted button.</p></li>
+<li>
+<p>if you need to add new parameters<a href=3D"https://www.youtube.com/watc=
+h?v=3DtPZZDngeiGU" data-card-appearance=3D"inline" class=3D"external-link" =
+rel=3D"nofollow">https://www.youtube.com/watch?v=3DtPZZDngeiGU</a></p></li>
+</ul></li>
+<li>
+<p>The Jenkinfile</p>
+<ul>
+<li>
+<p>based on aws_eks_tenant_resize/Jenkinsfile</p></li>
+</ul></li>
+</ul>
+<p>Script - aws_mt_wipedb.sh</p>
+<ul>
+<li>
+<p>stop stateful set by lowering replica to zero</p></li>
+<li>
+<p>delete stateful set</p></li>
+<li>
+<p>delete pvc</p>
+<ul>
+<li>
+<p>mySQL =3D data-<code>data-elastic-skybox-0</code></p></li>
+<li>
+<p>elasticsearch =3D <code>data-mysql-skybox-0</code></p></li>
+<li>
+<p>data =3D <code>skybox-data-skybox-0</code></p></li>
+</ul></li>
+<li>
+<p>delete files from the bastion of the customer=E2=80=99s cluster. In path=
+ =E2=80=9Ccd /efs/customers/&lt;tenant name&gt;=E2=80=9D search the latest =
+=E2=80=9Cconfx=E2=80=9D directory and delete the following files:</p>
+<ul>
+<li>
+<p>for wipe_db</p></li>
+<li>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">rm -f \=
+"\$latest_confx/*.pem\"
+rm -f \"\$latest_confx/*.cksum\"
+rm -f \"\$latest_confx/*.p12\"</pre>
+</div>
+</div></li>
+<li>
+<p>for elastic search</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">rm -f \=
+"\$latest_confx/server.skybox.elastic.crt\"
+rm -f \"\$latest_confx/server.skybox.elastic.key\"</pre>
+</div>
+</div></li>
+</ul></li>
+<li>
+<p>recreate stateful - by calling pipeline =E2=80=9Caws_eks_tenant_provisio=
+ning_update=E2=80=9C )</p>
+<ul>
+<li>
+<p>search for usage examples in devopstool, if not found - <br><a href=3D"h=
+ttps://www.jenkins.io/doc/book/pipeline/getting-started/#snippet-generator"=
+ data-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">h=
+ttps://www.jenkins.io/doc/book/pipeline/getting-started/#snippet-generator<=
+/a></p></li>
+<li>
+<p>Snippet Generator - steps for a Scripted Pipeline | <code>steps</code> b=
+lock in a <code>stage</code> in a Declarative Pipeline</p></li>
+<li>
+<p>Declarative Directive Generator - sections and directives used to define=
+ a Declarative Pipeline.</p></li>
+</ul></li>
+</ul>
+<p>Test the pipeline</p>
+<ul>
+<li>
+<p><a href=3D"https://d-9067645ef5.awsapps.com/start/#/?tab=3Daccounts" dat=
+a-card-appearance=3D"inline" class=3D"external-link" rel=3D"nofollow">https=
+://d-9067645ef5.awsapps.com/start/#/?tab=3Daccounts</a> - access with =E2=
+=80=9Cskybox-internal-devops03s-dev=E2=80=9C to =E2=80=9Cskybox-internal-de=
+vops03s-dev=E2=80=9D</p>
+<ul>
+<li>
+<p>make sure you are at one of the following:</p>
+<ul>
+<li>
+<p>N. virginia - us-east-1</p></li>
+<li>
+<p>singapore - ap-southeast-1</p></li>
+<li>
+<p>frankfort - eu-central-1</p></li>
+</ul></li>
+<li>
+<p>EC2 - micro is the bastion that delete_confx_files.sh accesses to delete=
+ file -within the instance</p>
+<ul>
+<li>
+<p>accese k9 =3D /efs/k9s</p></li>
+<li>
+<p>healthcheck =3D bash -x /healthcheck.sh</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p><a href=3D"https://sb-consul/ui/dc1/kv/aws/ou/non-production-rnd/jenkins=
+_multi_tenant/003857080240/devopscust01/skybox_public_url/edit" class=3D"ex=
+ternal-link" rel=3D"nofollow">https://sb-consul/ui/dc1/kv/aws/ou/non-produc=
+tion-rnd/jenkins_multi_tenant/003857080240/devopscust01/skybox_public_url/e=
+dit</a> - the url for devopscust01 within the multi tennat of devops3</p>
+<ul>
+<li>
+<p>ensure you can login to it</p>
+<ul>
+<li>
+<p>username =3D saasadmin</p></li>
+<li>
+<p>password =3D <a href=3D"https://us-east-1.console.aws.amazon.com/systems=
+-manager/home?region=3Dus-east-1&amp;tab=3DTable#list_parameter_filters=3DN=
+ame:Contains:saasadmin" class=3D"external-link" rel=3D"nofollow">AWS System=
+s Manager</a> =E2=86=92 <a href=3D"https://us-east-1.console.aws.amazon.com=
+/systems-manager/parameters?region=3Dus-east-1&amp;tab=3DTable#list_paramet=
+er_filters=3DName:Contains:saasadmin" class=3D"external-link" rel=3D"nofoll=
+ow">Parameter Store</a> =E2=86=92 <a href=3D"https://us-east-1.console.aws.=
+amazon.com/systems-manager/parameters/%252Fdevopscust01%252Fproduction_saas=
+admin_password/description?region=3Dus-east-1&amp;tab=3DTable#list_paramete=
+r_filters=3DName:Contains:saasadmin" class=3D"external-link" rel=3D"nofollo=
+w">/devopscust01/production_saasadmin_password</a></p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_62_2061461052.1740314898749
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/8b6b77ca4e264829d8408d3cf48479d9786f03b6b6424bfd6a7ba44066ec7613
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_62_2061461052.1740314898749--

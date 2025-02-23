@@ -1,0 +1,808 @@
+Message-ID: <1665440513.23.1740314953490@af50ec86a688>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_22_1407793237.1740314953489"
+
+------=_Part_22_1407793237.1740314953489
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Update ELK</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Update ELK</h1>
+    <div class=3D"Section1">
+        <p>aim =3D update the current production version of ELK to the late=
+st version.</p>
+<p>method =3D install the current version on two testing servers, and then =
+update them.</p>
+<p>TLDR - files at devoptools/docker/elk, change to the same version all co=
+mponents.</p>
+<p></p>
+<p>Elastic search</p>
+<ul>
+<li>
+<p>find the current running version that is stable</p>
+<ul>
+<li>
+<p><a href=3D"https://www.elastic.co/guide/en/elasticsearch/reference/curre=
+nt/docker.html" data-card-appearance=3D"inline" class=3D"external-link" rel=
+=3D"nofollow">https://www.elastic.co/guide/en/elasticsearch/reference/curre=
+nt/docker.html</a></p></li>
+</ul></li>
+<li>
+<p><span style=3D"background-color: rgb(220,223,228);">ssh root@root@devops=
+-srv-01</span> + <span style=3D"background-color: rgb(220,223,228);">ssh ro=
+ot@root@devops-srv-02</span></p></li>
+<li>
+<p>config files at <span style=3D"background-color: rgb(220,223,228);">devo=
+pstools/docker/elk_update_version_test/elasticsearch</span></p>
+<ul>
+<li>
+<p>certification in /opt/certs</p></li>
+</ul></li>
+<li>
+<p>run elasticsearch container on each of the two servers (if you run only =
+on one it wont work) using the <span style=3D"background-color: rgb(220,223=
+,228);">run_elasticsearch_container.sh</span> script.</p>
+<ul>
+<li>
+<p>if there is a problem with virtual memory - <a href=3D"https://stackover=
+flow.com/questions/41064572/docker-elk-vm-max-map-count" data-card-appearan=
+ce=3D"inline" class=3D"external-link" rel=3D"nofollow">https://stackoverflo=
+w.com/questions/41064572/docker-elk-vm-max-map-count</a></p></li>
+</ul></li>
+<li>
+<p>access at https://server_ip/9200 with elastic:elastic</p>
+<ul>
+<li>
+<p>verigy health of cluster - <br>
+curl -u elastic:elastic -X GET "<a href=3D"https://localhost:9200/_cluster/=
+health?pretty" class=3D"external-link" rel=3D"nofollow">https://localhost:9=
+200/_cluster/health?pretty</a>" -k</p></li>
+<li>
+<p>check which streams are listening - <br>
+curl -X GET "<a href=3D"https://devops-srv-01:9200/_data_stream?pretty" cla=
+ss=3D"external-link" rel=3D"nofollow">https://devops-srv-01:9200/_data_stre=
+am?pretty</a>" -u elastic:elastic</p></li>
+</ul></li>
+</ul>
+<p></p>
+<p>Kibana</p>
+<ul>
+<li>
+<p><span style=3D"background-color: rgb(220,223,228);">ssh root@root@devops=
+-srv-01</span></p></li>
+<li>
+<p>config files at <span style=3D"background-color: rgb(220,223,228);">devo=
+pstools/docker/elk_update_version_test/kibana</span></p></li>
+<li>
+<p>change the kibana_system users password<span style=3D"background-color: =
+rgb(220,223,228);"> </span></p>
+<ul>
+<li>
+<p>In elastic search - <br><span style=3D"background-color: rgb(220,223,228=
+);">curl -u elastic:elastic -X POST "https://localhost:9200/_security/user/=
+kibana_system/_password" -H "Content-Type: application/json" -k -d '{ "pass=
+word": "elastic" }'</span></p>
+<ul>
+<li>
+<p>verify change - <br><span style=3D"background-color: rgb(220,223,228);">=
+curl -u kibana_system:secure_new_password -X GET "</span><a href=3D"https:/=
+/localhost:9200/_security/_authenticate" class=3D"external-link" rel=3D"nof=
+ollow"><span style=3D"background-color: rgb(220,223,228);">https://localhos=
+t:9200/_security/_authenticate</span></a><span style=3D"background-color: r=
+gb(220,223,228);">" -H "Content-Type: application/json" -k</span></p></li>
+</ul></li>
+<li>
+<p>In kibanas configuration - <br><span style=3D"background-color: rgb(220,=
+223,228);">devopstools/docker/elk_update_version_test/kibana.yml</span></p>=
+</li>
+</ul></li>
+<li>
+<p>run the kibana container using the <span style=3D"background-color: rgb(=
+220,223,228);">run_kibana_container.sh</span> script</p>
+<ul>
+<li>
+<p>no need for certification for kibana, SSL will be handled by nginx (unli=
+ke elasticsearch, which has its own SSL, not through nginx)</p></li>
+</ul></li>
+<li>
+<p>access at http://server_ip:5601 with elastic:elastic (same as elasticsea=
+rch user and password)</p></li>
+</ul>
+<p></p>
+<p>metricbeat</p>
+<ul>
+<li>
+<p><span style=3D"background-color: rgb(220,223,228);">ssh root@root@devops=
+-srv-01</span></p></li>
+<li>
+<p>config files at <span style=3D"background-color: rgb(220,223,228);">/dev=
+opstools/docker/elk_update_version_test/metricbeat</span></p></li>
+<li>
+<p>copy credentials from those of elasticsearch - .crt + .key + root.pem - =
+into <span style=3D"background-color: rgb(220,223,228);">/devopstools/docke=
+r/elk_update_version_test/metricbeat/ca</span></p></li>
+<li>
+<p>run the metricbeat container using the <span style=3D"background-color: =
+rgb(220,223,228);">run_metricbeat_container.sh</span> script</p></li>
+<li>
+<p>testing connectivity of metric beat</p>
+<ul>
+<li>
+<p>log into kibana and see if there are new entries in the side bar =E2=80=
+=9Cdiscover=E2=80=9D under data view =E2=80=9Cmetricbeat-*=E2=80=9C</p></li=
+>
+<li>
+<p>Verify Elasticsearch Outputs in Metricbeat Configuration<br><span style=
+=3D"background-color: rgb(220,223,228);">docker exec -it metricbeat cat /us=
+r/share/metricbeat/metricbeat.yml</span></p></li>
+<li>
+<p>Test Elasticsearch Accessibility from the Metricbeat Container<br><span =
+style=3D"background-color: rgb(220,223,228);">docker exec -it metricbeat ba=
+sh</span><br><span style=3D"background-color: rgb(220,223,228);">curl -u &l=
+t;username&gt;:&lt;password&gt; -X GET "&lt;https://&lt;elasticsearch_host&=
+gt;&gt;:9200" -k</span></p></li>
+<li>
+<p>Check Elasticsearch for Incoming Metricbeat Data<br><span style=3D"backg=
+round-color: rgb(220,223,228);">docker exec -it elasticsearch bash</span><b=
+r><span style=3D"background-color: rgb(220,223,228);">curl -u &lt;username&=
+gt;:&lt;password&gt; -X GET "&lt;https://&lt;elasticsearch_host&gt;&gt;:920=
+</span>0/_cat/indices?v" -k</p></li>
+<li>
+<p>Use Metricbeat=E2=80=99s Test Mode<br><span style=3D"background-color: r=
+gb(220,223,228);">docker exec -it metricbeat metricbeat test output</span><=
+/p></li>
+</ul></li>
+<li>
+<p>docker exec -it metricbeat_test bash</p>
+<ul>
+<li>
+<p>metricbeat setup</p></li>
+<li>
+<p>metricbeat -e</p></li>
+<li>
+<p>if path already taken -</p>
+<ul>
+<li>
+<p>rm -f /usr/share/metricbeat/data/metricbeat.lock</p></li>
+<li>
+<p>change the path in metricbeat.yml</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p></p>
+<p>Heartbeat</p>
+<ul>
+<li>
+<p><span style=3D"background-color: rgb(220,223,228);">ssh root@root@devops=
+-srv-01</span></p></li>
+<li>
+<p>config files at <span style=3D"background-color: rgb(220,223,228);">/dev=
+opstools/docker/elk_update_version_test/heartbeat</span></p></li>
+<li>
+<p>copy credentials from those of elasticsearch - .crt + .key + root.pem - =
+into <span style=3D"background-color: rgb(220,223,228);">/devopstools/docke=
+r/elk_update_version_test/heartbeat/ca</span></p></li>
+<li>
+<p>run the heartbeat container using the <span style=3D"background-color: r=
+gb(220,223,228);">run_heartbeat_container.sh</span> script</p></li>
+<li>
+<p>to check connectivity -</p>
+<ul>
+<li>
+<p>kibana =E2=86=92 discover =E2=86=92 create a new data view =E2=86=92 pat=
+tern =E2=80=9Cheartbeat*=E2=80=9C</p></li>
+<li>
+<p>kibana =E2=86=92 devtools =E2=86=92 GET heartbeat-*/_search</p></li>
+</ul></li>
+</ul>
+<p></p>
+<p>Add a document with time-data:</p>
+<ul>
+<li>
+<p>PUT /test_yalee</p></li>
+<li>
+<p>POST /test_yalee/_doc<br>
+{<br>
+ "full_name": "com.skybox.view.agent.provisioning.cisco.csm.CiscoSecurityMa=
+nagerModifyRuleTest.testModifyRulePosition_goodPath",<br>
+ "name": "com.skybox.view.agent.provisioning.cisco.csm.CiscoSecurityManager=
+ModifyRuleTest",<br>
+ "classname": "com.skybox.view.agent.provisioning.cisco.csm.CiscoSecurityMa=
+nagerModifyRuleTest",<br>
+ "run_time": "2024-11-25T10:25:44.297915+02:00",<br>
+ "duration": "0.003",<br>
+ "source_branch": "SKY-272017_content_validation_check_executable",<br>
+ "target_branch": "master",<br>
+ "suite_name": "provisioning-suite",<br>
+ "skybox_module": "TBD",<br>
+ "developer": "<a href=3D"mailto:alona.danutsa@skyboxsecurity.com" class=3D=
+"external-link" rel=3D"nofollow">alona.danutsa@skyboxsecurity.com</a>",<br>
+ "failure": "None",<br>
+ "pipeline_id": "89012",<br>
+ "merge_request_id": "52904",<br>
+ "job_name": "source_to_target",<br>
+ "start_time": "2024-11-25T10:25:43.576133+02:00",<br>
+ "success": "true"<br>
+}</p></li>
+<li>
+<p>GET test_yalee/_search</p></li>
+</ul>
+<p></p>
+<p>Certifications</p>
+<ul>
+<li>
+<p>.crt =3D public certificate =3D public key signed by a trusted <strong>C=
+ertificate Authority (CA)</strong></p>
+<ul>
+<li>
+<p>used to identify your machine to clients.</p></li>
+<li>
+<p>proves the identity of the machine or service and is used to establish t=
+rust with clients that connect to it</p></li>
+</ul></li>
+<li>
+<p>.key =3D private key</p>
+<ul>
+<li>
+<p>decrypt messages that were encrypted with the public key</p></li>
+</ul></li>
+<li>
+<p>ca/ subdirectory</p>
+<ul>
+<li>
+<p>ca.crt =3D <strong>public certificate</strong> of the Certificate Author=
+ity (CA)</p>
+<ul>
+<li>
+<p>issuing digital certificates (like the <code>*.crt</code> file) after ve=
+rifying the identity of the subject.</p></li>
+<li>
+<p>Clients must trust the CA to trust your server=E2=80=99s certificate.</p=
+></li>
+</ul></li>
+<li>
+<p>root.pem =3D <strong>root certificate</strong> of the Certificate Author=
+ity (CA)</p>
+<ul>
+<li>
+<p><strong>highest authority</strong> in a certificate chain.</p></li>
+<li>
+<p>used to <strong>sign</strong> other certificates (like intermediate cert=
+ificates and server certificates) and acts as the ultimate <strong>trusted =
+authority</strong>.</p></li>
+</ul></li>
+<li>
+<p>.cer =3D .crt</p>
+<ul>
+<li>
+<p>It could be an <strong>intermediate certificate</strong>, which is used =
+to create a chain of trust between your server's certificate (<code>{machin=
+e name}.crt</code>) and the root certificate (<code>ca.crt</code>).</p></li=
+>
+<li>
+<p>ensures that a client can trace the server certificate back to a trusted=
+ root certificate.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"a3=
+f928cc-e714-4c2e-bdf0-da6c7577dc87" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Certificate</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Server Side</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Client Side</strong></p></th>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"a4=
+3da490-c29e-4064-b088-2c6e95219bfa" class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Server certificate</strong> (<code>{machine name}.crt</code>)</p=
+></td>
+<td class=3D"confluenceTd">
+<p>Present on the server to identify it.</p></td>
+<td class=3D"confluenceTd">
+<p>Typically provided by the server during the handshake. The client verifi=
+es it using trusted CA certificates.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"b9=
+959a86-bffd-4e5c-9399-83d7e8108e15" class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Private key</strong> (<code>{machine name}.key</code>)</p></td>
+<td class=3D"confluenceTd">
+<p>Present on the server to decrypt and sign data.</p></td>
+<td class=3D"confluenceTd">
+<p>Not needed on the client side.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"f3=
+58a9b3-cfde-4d54-9586-b8221d7b610a" class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>CA certificates</strong> (<code>ca.crt</code>)</p></td>
+<td class=3D"confluenceTd">
+<p>Optionally used for client authentication or verifying client certificat=
+es.</p></td>
+<td class=3D"confluenceTd">
+<p>Optionally needed to verify the server's certificate or trust an interme=
+diate CA.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"cd=
+88ed24-b61d-4cb3-b155-5a6f38da8cd9" class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Intermediate certificates</strong> (<code>something.cer</code>)<=
+/p></td>
+<td class=3D"confluenceTd">
+<p>Optionally included to form the full certificate chain.</p></td>
+<td class=3D"confluenceTd">
+<p>Optionally included to validate intermediate certificates in the chain.<=
+/p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"ec=
+db84a4-ad2e-47ea-9dde-4b0e5aca2da2" class=3D"confluenceTable">
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Root certificate</strong> (<code>root.pem</code>)</p></td>
+<td class=3D"confluenceTd">
+<p>Optionally used for verifying client certificates (in mutual TLS).</p></=
+td>
+<td class=3D"confluenceTd">
+<p>Must be trusted by the client to verify the server's certificate.</p></t=
+d>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Server Side</strong>:</p>
+<ul>
+<li>
+<p>The <strong>server certificate</strong> and <strong>private key</strong>=
+ are essential for identifying and securing communication.</p></li>
+<li>
+<p>The <strong>CA certificates</strong> and <strong>intermediate certificat=
+es</strong> are needed if client authentication or certificate chains are i=
+nvolved.</p></li>
+</ul></li>
+<li>
+<p><strong>Client Side</strong>:</p>
+<ul>
+<li>
+<p>The <strong>root certificate</strong> is critical to trust the server's =
+certificate.</p></li>
+<li>
+<p><strong>Intermediate certificates</strong> and <strong>CA certificates</=
+strong> may be required to establish a full trust chain from the server's c=
+ertificate.</p></li>
+</ul></li>
+</ul>
+<p></p>
+<p></p>
+<p>The actual production update:</p>
+<ul>
+<li>
+<p>ssh root@</p>
+<ul>
+<li>
+<p>sb-es-node-06</p></li>
+<li>
+<p>sb-es-node-07</p></li>
+<li>
+<p>sb-es-node-08</p></li>
+<li>
+<p>sb-es-node-09</p></li>
+<li>
+<p>sb-es-node-10</p></li>
+</ul></li>
+<li>
+<p>in each:</p>
+<ul>
+<li>
+<p>./stop_es.sh</p></li>
+<li>
+<p>docker stop metricbeat</p></li>
+<li>
+<p>./rm_es.sh</p></li>
+<li>
+<p>nano run_es.sh</p>
+<ul>
+<li>
+<p>change version to 8.16.1</p></li>
+</ul></li>
+<li>
+<p>./run_es.sh</p></li>
+</ul></li>
+<li>
+<p>Test access</p>
+<ul>
+<li>
+<p><a href=3D"https://sb-elasticsearch/" class=3D"external-link" rel=3D"nof=
+ollow">https://sb-elasticsearch/</a></p>
+<ul>
+<li>
+<p>elastic</p></li>
+<li>
+<p><a href=3D"https://sb-pum.il.skyboxsecurity.com/SecretServer/app/#/secre=
+ts/1805/general" class=3D"external-link" rel=3D"nofollow">https://sb-pum.il=
+.skyboxsecurity.com/SecretServer/app/#/secrets/1805/general</a></p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Kibana</p>
+<ul>
+<li>
+<p>ssh root@sb-elasticsearch (<a href=3D"https://sb-pum.il.skyboxsecurity.c=
+om/SecretServer/app/#/secrets/2917/general" class=3D"external-link" rel=3D"=
+nofollow">https://sb-pum.il.skyboxsecurity.com/SecretServer/app/#/secrets/2=
+917/general</a>)</p></li>
+<li>
+<p>docker stop kibana</p></li>
+<li>
+<p>docker rm kibana</p></li>
+<li>
+<p>docker run -d &nbsp; --name "kibana" &nbsp; --volume "/root/kibana/kiban=
+a.yml:/usr/share/kibana/config/kibana.yml:ro" &nbsp; --volume "/etc/localti=
+me:/etc/localtime:ro" &nbsp; --restart "unless-stopped" &nbsp; --publish "5=
+601:5601" &nbsp; "<a href=3D"http://docker.elastic.co/kibana/kibana:8.16.1"=
+ class=3D"external-link" rel=3D"nofollow">docker.elastic.co/kibana/kibana:8=
+.16.1</a>"</p></li>
+<li>
+<p>Test access</p>
+<ul>
+<li>
+<p><a href=3D"https://sb-kibana/" class=3D"external-link" rel=3D"nofollow">=
+https://sb-kibana/</a> - same user and password as elastic</p></li>
+</ul></li>
+</ul>
+<p>Heartbeat</p>
+<ul>
+<li>
+<p>ssh root@sb-es-08</p>
+<ul>
+<li>
+<p>heartbeat directory with</p>
+<ul>
+<li>
+<p>Docker file (devoptools/docker/heartbeat)</p></li>
+<li>
+<p>heartbeat.yml (devoptools/docker/heartbeat + change passwords)</p>
+<ul>
+<li>
+<p>elastic - <a href=3D"https://sb-pum.il.skyboxsecurity.com/SecretServer/a=
+pp/#/secrets/1805/general" class=3D"external-link" rel=3D"nofollow">https:/=
+/sb-pum.il.skyboxsecurity.com/SecretServer/app/#/secrets/1805/general</a></=
+p></li>
+<li>
+<p>devopsadmin -</p></li>
+</ul></li>
+<li>
+<p>ca</p>
+<ul>
+<li>
+<p>root.pem (from /opt/certs )</p></li>
+<li>
+<p>sb-es-nodes.crt (from /opt/certs )</p></li>
+<li>
+<p>sb-es-nodes.key (from /opt/certs )</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p>build and push the new image<br>
+docker build --build-arg HEARTBEAT_VERSION=3D8.16.1 -t <a href=3D"http://do=
+cker-nexus3.il.skyboxsecurity.com/devops/heartbeat:8.16.1-secured" class=3D=
+"external-link" rel=3D"nofollow">docker-nexus3.il.skyboxsecurity.com/devops=
+/heartbeat:8.16.1-secured</a> . &amp;&amp; docker push <a href=3D"http://do=
+cker-nexus3.il.skyboxsecurity.com/devops/heartbeat:8.16.1-secured" class=3D=
+"external-link" rel=3D"nofollow">docker-nexus3.il.skyboxsecurity.com/devops=
+/heartbeat:8.16.1-secured</a></p></li>
+</ul></li>
+<li>
+<p>ssh root@sb-elasticsearch (<a href=3D"https://sb-pum.il.skyboxsecurity.c=
+om/SecretServer/app/#/secrets/2917/general" class=3D"external-link" rel=3D"=
+nofollow">https://sb-pum.il.skyboxsecurity.com/SecretServer/app/#/secrets/2=
+917/general</a>)</p>
+<ul>
+<li>
+<p>docker stop heartbeat</p></li>
+<li>
+<p>docker rm heartbeat</p></li>
+<li>
+<p>run the new image <br><code>docker run --restart=3Dunless-stopped -d --n=
+ame heartbeat docker-nexus3.il.skyboxsecurity.com/devops/heartbeat:8.16.1-s=
+ecured</code></p></li>
+</ul></li>
+</ul>
+<p>Metricbeat</p>
+<ul>
+<li>
+<p>ssh root@sb-es-08</p>
+<ul>
+<li>
+<p>metricbeat directory with</p>
+<ul>
+<li>
+<p>Docker file (devoptools/docker/metricbeat + change version)</p></li>
+<li>
+<p>metricbeat.yml (devoptools/docker/metricbeat + change passwords)</p></li=
+>
+<li>
+<p>system.yml (devoptools/docker/metricbeat)</p></li>
+<li>
+<p>ca</p>
+<ul>
+<li>
+<p>root.pem (from /opt/certs )</p></li>
+<li>
+<p>sb-es-nodes.crt (from /opt/certs )</p></li>
+<li>
+<p>sb-es-nodes.key (from /opt/certs )</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p>build and push the new image<br><code>docker build --build-arg METRICBEA=
+T_VERSION=3D8.16.1 -t docker-nexus3.il.skyboxsecurity.com/metricbeat:8.16.1=
+ . &amp;&amp; docker push docker-nexus3.il.skyboxsecurity.com/metricbeat:8.=
+16.1</code></p></li>
+</ul></li>
+<li>
+<p>Ansible to all computers</p></li>
+</ul>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_22_1407793237.1740314953489--

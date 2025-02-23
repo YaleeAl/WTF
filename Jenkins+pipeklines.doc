@@ -1,0 +1,353 @@
+Message-ID: <852224876.65.1740314984384@db4e1f705d72>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_64_790118503.1740314984384"
+
+------=_Part_64_790118503.1740314984384
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Jenkins pipeklines</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Jenkins pipeklines</h1>
+    <div class=3D"Section1">
+        <p>4 jenkins</p>
+<ol start=3D"1">
+<li>
+<p>ci - jenkins git - source to target</p>
+<ol start=3D"1">
+<li>
+<p>which profile to run form naven for the build, which tests to run, steps=
+ skipped based on the DB.</p></li>
+<li>
+<p>spot bugs - quality assurance, more for the dev</p></li>
+<li>
+<p>junits - errartic tests can be skipped (can be html reports - artifacts)=
+</p></li>
+</ol></li>
+<li>
+<p>cd - jebkins srv -</p>
+<ol start=3D"1">
+<li>
+<p>production build - several versions =3D=3D several branching</p>
+<ol start=3D"1">
+<li>
+<p>giddy =3D master + supported versions</p></li>
+<li>
+<p>all are running the same pipelines, to seoearte master from versions and=
+ make it simpler for the release</p></li>
+</ol></li>
+<li>
+<p>non production build - for devs, same as a, but without the licensing (3=
+ licensing servers) that are sighed + minor changes =E2=80=93 only for test=
+s</p></li>
+<li>
+<p>saas</p>
+<ol start=3D"1">
+<li>
+<p>AZURE - make sure</p></li>
+</ol></li>
+<li>
+<p>appliance - the actual image, web admin and such</p>
+<ol start=3D"1">
+<li>
+<p>iso in azure and aws =E2=86=92</p></li>
+<li>
+<p>appliance_ubuntu job - create the appliance</p></li>
+<li>
+<p>web admin - port 444 - user=3Dskyboxview password=3Dskyboxview/welcomet0=
+Jamic@</p>
+<ol start=3D"1">
+<li>
+<p>moved from centosS to ubuntu - redhat stopped updating centosS.</p></li>
+</ol></li>
+<li>
+<p>application - port 8443 - user=3Dskyboxview password=3Dskyboxview (on pe=
+rm, saas is differnet)</p></li>
+</ol></li>
+</ol></li>
+<li>
+<p>automation - less our jobs</p></li>
+<li>
+<p>ti - volunarbility dictionary - from older pipelines to newer ones - acc=
+ompany</p></li>
+</ol>
+<p></p>
+<p>jenkins git - after soucre to target approved - trigger =E2=80=9Cjira pi=
+peline=E2=80=9C</p>
+<p>Jira</p>
+<ol start=3D"1">
+<li>
+<p>fixed version - which versions are affected and needs to be fixed</p></l=
+i>
+<li>
+<p>affected version - which version are affected, what was already pushed, =
+was pushed there by =E2=80=9Cjira_pipelines=E2=80=9C + orit + release mange=
+rs =E2=86=92 =E2=80=9Ccommit$merge=E2=80=9D button in the Jira at the top r=
+ight corner, will run the cherry pick 2 pipeline on the diff from 1 and 2.<=
+/p></li>
+<li>
+<p>-</p></li>
+<li>
+<p>fixed in build - A the end of a production build a git tag is added, so =
+that each build has its own tag for the commit that was built by it. Diff b=
+etween two build tags, for each of the issues we update the new build that =
+fixed the issue</p></li>
+<li>
+<p>latest jenkins build - by QA request, the latest build that has it fixed=
+. each version that has a README - from git the issues, cross referncned fr=
+om Jira queries so that certin criteria cross refrenced with salrforce (CRM=
+) to create =3Dthe readme,</p></li>
+</ol>
+<p></p>
+<p>Mend - code scanning - not yes on the appliance, as it is not a containe=
+r yet - if a voln is discovered it creates a Jira,</p>
+<p>Qualice - on appliance, it is important for the client to have no vulner=
+abilities, old and new to create a diff for the release notes. the base of =
+the iso holds the latest versions, better to have</p>
+<p>secret server - holds passwords</p>
+<ul>
+<li>
+<p>qualice - general user , get username password from secret server</p>
+<ul>
+<li>
+<p></p></li>
+</ul></li>
+</ul>
+<p>container images - nexus \ ecr for AWS \ same as azure</p>
+<p>start_server_validation - master skybox - the actual product, appliance =
+is mostly the infrastructure, but for the client to get an appliance it inc=
+ludes the product itself</p>
+<p></p>
+<p>console - <strong>research</strong> - holds key values</p>
+<p>artemis - research</p>
+<p>swagger - html files that a client can access, documentation not additio=
+nal featires</p>
+<p>GIT -</p>
+<p></p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_64_790118503.1740314984384--
